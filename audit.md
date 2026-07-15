@@ -2,6 +2,28 @@
 
 Dated log of editorial passes and verification runs. Newest first.
 
+## 2026-07-15 — critique revision + template migration
+
+Two passes in one: migrated the repo to the canonical paper template, and revised the manuscript to address an external referee report (a more thorough successor to `review-2026-06-18.md`).
+
+**Template migration.** `docs/PAPER.md` -> `paper/PAPER.md` (`paper_dir: paper`); all simulation code, results, scripts, and reference data moved under `simulation/`; `CLAUDE.md` -> `simulation/README.md`; the detailed docs (`FINDINGS.md`, `EXPERIMENTS.md`) moved under `simulation/`; `CLAIM_LEDGER.md` relocated to repo root; added the missing template files `brief.md`, `sources.md`, `research.md`, and a local `chats/chat.md` (chats/ now gitignored). `.gitignore` re-anchored to the new paths (`simulation/results/*`, `paper/PAPER.pdf`, `chats/`).
+
+**Content revision (honesty pass, no new experiments).** Brought every claim down to what the simulation shows, and fixed the concrete errors the referee passes flagged:
+- Established the identity `O = m − H` (with all pigeons placed) and re-read "reaching O_min" as complete coverage of the usable holes, not optimal load balancing, throughout the abstract, introduction, methods, results, and conclusion. Added the potential-vs-overload distinction (Φ measures balance, O measures coverage) and the conditional-on-U=0 status of the O_min bound.
+- Corrected the optimal-state count to the surjection count `7!{10 brace 7} = 29,635,200` (about 10.5% of the placed states), and deflated the `~10^9`-states free-lunch rhetoric: O_min is O(1) to compute, an optimal assignment O(m), and the random start already sits near the target (expected initial overload about 4.5 against a minimum of 3).
+- Rewrote Experiments 6 and 7. The dynamic freeze blocks new entries but does not eject incumbents (verified in `perturbations.py` and `model.py`), so overload never leaves 3.0; Exp 7 converges at step 3.9, before damage at step 100. Retracted the "bidirectional recovery" and "stress inoculation" readings; the real, defensible effect is process cost (failed placements 49.4 vs 24.7 in Exp 6; 173.5 vs 128.9 in Exp 7).
+- Reframed the delayed-gratification index as a statistic of the global trajectory, not agent memory, and removed the "accumulated experience is recruited" claim (it contradicts the memoryless agents). Marked the absence of stress inoculation as entailed by the architecture, not as evidence for pattern-channeling.
+- Fixed the "physical impossibility" error in Exp 1 (holes have no capacity cap; one hole can hold all ten, O=9; the collapse at 5-6 frozen holes is silent-rejection with U>0, a denominator artifact). Softened the "phase transition" to a finite-horizon-sensitive change.
+- Statistics: added the Spearman pseudoreplication caveat (pooled per-run points share seeds; across the five Exp-4 means the rank correlation is -1, not -0.494); flagged the noise-clipping bias; softened "no noise threshold" to "no detectable tolerance down to sigma = 0.5"; standardized on Cohen's d_z and removed the contradictory pooled-SD sentence; corrected the noise regression to O ≈ 3.21 + 0.24σ, R² ≈ 0.90 (was 3.0 + 0.26σ, R² 0.96); softened the power-of-two-choices analogy.
+- Free lunch: disclaimed against Wolpert & Macready (1997), distinguishing Levin's philosophical sense from the theorem, and noted the distributed process is itself a computation. Platonic vocabulary marked as an organizing interpretation held apart from the empirical claims (§5.1); the Pearl-causality paragraph recast as illustrating Levin's claim, not establishing it (§5.6). Preserved the already-honest parts: the corrected 0.75 chimeric baseline, the continuous-interface contrast as a hypothesis, and the §5.7 non-distinguishability admission.
+- Editorial: Aguilera 2004 -> 2000 (in-text and reference); Zhang reference initials -> Taining Zhang / Adam Goldstein; "first test" and "first morphogenetic perturbation analysis" -> "to our knowledge"; integrated Simon (1956) at the GREEDY policy (satisficing) and split Levin (2019, 2022) so both reconcile; removed the dangling "Table 0" reference; defined faultization against fault injection and mutation testing; removed the "free disaster" coinage; added two Limitations (freeze semantics; coverage-not-balance objective).
+
+References 10 -> 11 (added Wolpert & Macready 1997). Metadata abstract synced. Rewrote the stale `README.md` (wrong sorting-paper attribution, dead `docs/` paths, MorphoGPT-era overclaims) to match the `simulation/` layout and the honest findings, and renamed the front-facing docs from the old codename "Faultized Pigeonhole" to "On Faultization: Pigeonhole Principle" (internal code identifiers keep the old name as historical record).
+
+Not done (recorded in Limitations/Future Work as follow-ups): a load-balance objective (Φ − Φ* or the majorization vector); null policies; hard initial conditions; a scaling sweep in n and m/n; a freeze semantics that ejects incumbents; memory-augmented agents.
+
+Verify: voice 0 errors (advisory contrastive warns, inherent to the corrective framing); refs 11/11, 0 missing/0 unused; claims => claim-ledger present; build fresh (`paper/PAPER.pdf`); check => PASS. PDF synced to web. Left `review-2026-06-18.md` at root; the untracked `critique.md` referee dump is left in place for the author to remove.
+
 ## 2026-06-13 — voice reform
 
 Voice-reform pass to remove AI-writing tells, per `tooling/docs/voice.md`. No numbers, equations, table values, or citations changed.

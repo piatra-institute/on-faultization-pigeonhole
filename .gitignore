@@ -245,9 +245,11 @@ __marimo__/
 
 .env
 data/
-results/*
-!results/*.json
+simulation/results/*
+!simulation/results/*.json
 output/
-docs/PAPER.pdf
+paper/PAPER.pdf
+# raw genesis/seed material kept local
+chats/
 
 autoresearch

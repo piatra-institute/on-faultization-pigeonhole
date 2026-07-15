@@ -4,11 +4,11 @@ title: "On Faultization: Pigeonhole Principle. What Perturbation Reveals About P
 header: "On Faultization: Pigeonhole Principle"
 created: "2026-03"        # inception month (drives YYYY/MM archive path)
 date: "March 2026"            # publication month (shown on web)
-paper_dir: docs
+paper_dir: paper
 has_simulation: true
 claims_target: claim-ledger      # results.json | claim-ledger | none
 repo: git@github.com:piatra-institute/papers-on-faultization-pigeonhole.git
 github: https://github.com/piatra-institute/papers-on-faultization-pigeonhole
 status: published              # draft | built | published
 abstract: |-
-  We apply faultization (a systematic regime of morphogenetic perturbation) to the pigeonhole principle reinterpreted as a distributed multi-agent system, asking which patterns from the latent space (Levin, 2026) the system accesses under irreducible constraint. The theoretical minimum overload O_min = m − n is a mathematical truth the system channels without computing. In six of eight experiments every run converges to O_min exactly with zero variance, the strongest evidence we have for pattern-driven dynamics. Perceptual noise produces immediate degradation with no tolerance threshold; misleading holes invert the pattern-seeking mechanism; all four local policies reach identical endpoints despite 5-fold differences in process cost.
+  We apply faultization (a systematic regime of morphogenetic perturbation) to the pigeonhole principle reinterpreted as a distributed multi-agent system, asking which patterns from the latent space (Levin, 2026) the system accesses under irreducible constraint. The theoretical minimum overload O_min = m − n is a mathematical truth the system reaches without computing it. Because overload equals m minus the number of occupied holes when all pigeons are placed, reaching O_min is complete coverage of the usable holes rather than optimal load balancing, and in six of eight experiments every run reaches it with zero variance. Perceptual noise produces immediate degradation with no detectable tolerance down to the smallest noise tested; misleading holes invert the pattern-seeking mechanism, the study's strongest result; and all four local policies reach identical endpoints despite 5-fold differences in process cost. We read the free-lunch framing as Levin's philosophical sense, distinct from the No-Free-Lunch theorem, and separate the empirical results from that interpretation.

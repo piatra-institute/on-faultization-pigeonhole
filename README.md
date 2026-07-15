@@ -1,71 +1,61 @@
-# On Faultization: Pigeonhole
+# On Faultization: Pigeonhole Principle
 
-Morphogenetic perturbation of the pigeonhole principle, applying Levin et al.'s (2024) methodology to a distributed multi-agent system.
+Morphogenetic perturbation of the pigeonhole principle, reinterpreted as a distributed multi-agent placement system and read through Levin's (2026) proposal that physical systems are interfaces onto a latent space of mathematical patterns.
 
 ## Overview
 
-The classical pigeonhole principle states that if m > n pigeons are placed into n holes, at least one hole must contain more than one pigeon. Under the Platonic Space framing (Levin, 2026), we treat the pigeonhole principle not as a rule the agents compute but as a pattern they channel from the latent mathematical structure: the optimal allocation (O_min = m-n) exists in the space of mathematical truths, and the agent-substrate system serves as an interface through which that pattern manifests.
+The pigeonhole principle states that if `m > n` pigeons are placed into `n` holes, at least one hole must hold more than one pigeon. The theoretical minimum overload `O_min = m − n` is therefore a mathematical truth no allocation can beat. We treat this bound as a pattern the system reaches rather than computes: `m = 10` pigeons with local, memoryless policies place themselves into `n = 7` holes with no central controller.
 
-Each pigeon is an autonomous agent with a local policy, each hole is a stateful resource, and the system self-organizes around the irreducible constraint -- not because any agent knows the global optimum, but because the pattern is robustly accessible through the local interface.
+A short identity governs the whole study. With all pigeons placed, overload equals `m − H` where `H` is the number of occupied holes, so reaching `O_min = m − n` is exactly complete coverage of the usable holes, not optimal load balancing. The load-seeking policies are built to occupy empty holes, which is why they reach it.
 
-Eight experiments systematically perturb this interface -- narrowing bandwidth (frozen holes), blurring the sensory channel (noise), restricting information geometry (view radius), diversifying the interface type (policy mixtures), breaking and restoring it (recovery), and actively corrupting it (misleading holes) -- to probe the conditions under which the pigeonhole pattern manifests, degrades, or inverts.
+Eight experiments perturb the interface (removing capacity via frozen holes, blurring perception with noise, restricting information via view radius, mixing policies in chimeras, breaking and restoring holes, and lying about load with misleading holes) to see when coverage holds, degrades, or inverts.
 
-## Key Findings
+## Key findings
 
-- **Pattern manifestation (free lunch)**: The pigeonhole pattern manifests fully in 6 of 8 experiments -- the system receives optimal allocation without computing it
-- **Pattern plurality**: All four policies channel the same pattern with identical fidelity, but differ dramatically in process cost (failed placements vary by 5x, same-target retry from 0.46 to 1.00)
-- **Pattern fidelity (discrete)**: Unlike transformer training, perceptual noise causes immediate monotonic degradation -- the interface tolerates zero corruption
-- **No convincing agent-level learning**: Rejected pigeons often retry faulty substrate instead of learning to avoid it; the system is pattern-driven, not memory-driven
-- **Pattern corruption**: A single misleading hole inverts the pattern, attracting 36% of pigeons and 66% of overload while raising overload by 25.6%
-- **Bidirectional interface**: The collective state re-accesses the pattern after damage and healing with no hysteresis
+- **Coverage from local rules.** Complete coverage (`O_min`) is reached in 6 of 8 experiments with zero variance, using only local load-seeking, up to 43% substrate loss.
+- **Endpoint equals coverage, not balance.** Because `O = m − H`, reaching `O_min` measures hole coverage; two very differently balanced configurations can share the same overload.
+- **Process cost diverges.** Policies with identical endpoints differ up to 5-fold in failed placements and in same-target retry (0.463 REPULSIVE to 0.997 COOPERATIVE); the agents are memoryless and do not learn to avoid faulty holes.
+- **Discrete fidelity.** Perceptual noise degrades coverage immediately, with no detectable tolerance down to the smallest noise tested (sigma = 0.5).
+- **Deceptive feedback is the sharpest failure.** A single misleading hole (14% of the substrate) captures 36% of pigeons and 66% of overload; this deceptive-feedback result is the study's strongest and needs no Platonic reading.
+- **Dynamic damage removes no coverage.** In the recovery and progressive-damage experiments the dynamic freeze blocks new entries but keeps incumbents, so overload never changes; the real effect is process cost, with fault duration and schedule changing wasted attempts rather than the endpoint.
 
-## Quick Start
-
-```bash
-# Smoke test
-uv run --script run.py test
-
-# Run all experiments
-uv run --script run.py all
-
-# Statistical analysis
-uv run --script analyze_stats.py all
-
-# Generate plots
-uv run --script visualize.py
-```
-
-## Project Structure
+## Layout
 
 ```
 on-faultization-pigeonhole/
-├── run.py                    # CLI entry point
-├── model.py                  # Core pigeonhole system
-├── experiments.py            # 8 experiments
-├── perturbations.py          # Perturbation hooks
-├── metrics.py                # Statistical metrics
-├── visualize.py              # Plotting
-├── analyze_stats.py          # Paired t-tests
-├── CLAUDE.md                 # Quick reference
-├── README.md
-├── docs/
-│   ├── PAPER.md              # Full research paper
-│   ├── FINDINGS.md           # Detailed results
-│   └── EXPERIMENTS.md        # Concise summary
-├── scripts/
-│   └── build-paper.sh        # PDF generation
-├── results/                  # JSON + PNG outputs
-└── data/                     # Reference papers
+├── paper/
+│   └── PAPER.md              # the manuscript (PAPER.pdf built via ./papers build)
+├── simulation/               # all code, results, and detailed write-ups
+│   ├── model.py, perturbations.py, experiments.py, metrics.py
+│   ├── run.py, analyze_stats.py, visualize.py
+│   ├── results/              # committed JSON (PNG plots gitignored)
+│   ├── EXPERIMENTS.md, FINDINGS.md, README.md
+│   └── data/                 # reference material (gitignored)
+├── CLAIM_LEDGER.md           # every numeric claim traced to committed output
+├── metadata.yaml, audit.md, brief.md, sources.md, research.md
+└── review-2026-06-18.md      # external referee pass
+```
+
+## Quick start
+
+Run from the `simulation/` directory:
+
+```bash
+uv run --script run.py test              # smoke test
+uv run --script run.py all               # all 8 experiments
+uv run --script analyze_stats.py all     # paired t-tests + summary
+uv run --script visualize.py             # plots
 ```
 
 ## Documentation
 
-- [Paper](docs/PAPER.md) -- Full research paper with methodology and results
-- [Findings](docs/FINDINGS.md) -- Detailed per-experiment results with p-values
-- [Experiments](docs/EXPERIMENTS.md) -- Concise experiment summary
+- `paper/PAPER.md` -- the full manuscript, with methods, results, and discussion
+- `simulation/FINDINGS.md` -- detailed per-experiment results
+- `simulation/EXPERIMENTS.md` -- concise experiment summary
+- `CLAIM_LEDGER.md` -- numeric-claim ledger
 
 ## References
 
-Levin, M. (2026). The Platonic Space framework for morphogenetic competency.
+Levin, M. (2026). A short argument on Platonic Space. Blog post, March 31, 2026.
 
-Levin, M., Bongard, J., & Bhatt, R. (2024). Morphogenetic competencies of sorting algorithms. arXiv:2401.05375.
+Zhang, T., Goldstein, A., & Levin, M. (2024). Classical sorting algorithms as a model of morphogenesis: self-sorting arrays reveal unexpected competencies in a minimal model of basal intelligence. arXiv:2401.05375.
