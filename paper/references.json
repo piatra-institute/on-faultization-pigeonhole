@@ -1,0 +1,139 @@
+[
+  {
+    "id": "azar1999",
+    "type": "article-journal",
+    "title": "Balanced Allocations",
+    "author": [
+      {
+        "given": "Yossi",
+        "family": "Azar"
+      },
+      {
+        "given": "Andrei Z.",
+        "family": "Broder"
+      },
+      {
+        "given": "Anna R.",
+        "family": "Karlin"
+      },
+      {
+        "given": "Eli",
+        "family": "Upfal"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    },
+    "container-title": "SIAM Journal on Computing",
+    "volume": "29",
+    "issue": "1",
+    "page": "180-200",
+    "DOI": "10.1137/S0097539795288490",
+    "URL": "https://homes.cs.washington.edu/~karlin/papers/AzarBKU99.pdf"
+  },
+  {
+    "id": "holm1979",
+    "type": "article-journal",
+    "title": "A Simple Sequentially Rejective Multiple Test Procedure",
+    "author": [
+      {
+        "given": "Sture",
+        "family": "Holm"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1979
+        ]
+      ]
+    },
+    "container-title": "Scandinavian Journal of Statistics",
+    "volume": "6",
+    "issue": "2",
+    "page": "65-70",
+    "URL": "https://www.jstor.org/stable/4615733"
+  },
+  {
+    "id": "levin2026",
+    "type": "post-weblog",
+    "title": "A short argument on Platonic Space: variable-agency patterns that in-form physics, biology, computer science, and cognitive science",
+    "author": [
+      {
+        "given": "Michael",
+        "family": "Levin"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          31
+        ]
+      ]
+    },
+    "container-title": "Forms of life, forms of mind",
+    "URL": "https://thoughtforms.life/a-short-argument-on-platonic-space-variable-agency-patterns-that-in-form-physics-biology-computer-science-and-cognitive-science/"
+  },
+  {
+    "id": "rosenthal1973",
+    "type": "article-journal",
+    "title": "A Class of Games Possessing Pure-Strategy Nash Equilibria",
+    "author": [
+      {
+        "given": "Robert W.",
+        "family": "Rosenthal"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1973
+        ]
+      ]
+    },
+    "container-title": "International Journal of Game Theory",
+    "volume": "2",
+    "page": "65-67",
+    "DOI": "10.1007/BF01737559",
+    "URL": "https://ranger.uta.edu/~weems/NOTES6319/PAPERSONE/rosenthal1973.pdf"
+  },
+  {
+    "id": "zhang2025",
+    "type": "article-journal",
+    "title": "Classical sorting algorithms as a model of morphogenesis: Self-sorting arrays reveal unexpected competencies in a minimal model of basal intelligence",
+    "author": [
+      {
+        "given": "Taining",
+        "family": "Zhang"
+      },
+      {
+        "given": "Adam",
+        "family": "Goldstein"
+      },
+      {
+        "given": "Michael",
+        "family": "Levin"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          2
+        ]
+      ]
+    },
+    "container-title": "Adaptive Behavior",
+    "volume": "33",
+    "issue": "1",
+    "page": "25-54",
+    "DOI": "10.1177/10597123241269740",
+    "URL": "https://journals.sagepub.com/doi/10.1177/10597123241269740"
+  }
+]

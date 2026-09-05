@@ -1,3 +1,9 @@
+> Historical report for the pre-September draft. It is preserved for provenance,
+> not maintained as evidence for the revised manuscript. Use `claims.yaml` at
+> the repository root, the September protocol and its new execution record.
+> The old interpretation of convergence, noise, capacity and pattern access
+> must not be treated as a current finding.
+
 # Claim Ledger
 
 Every numeric claim in `paper/PAPER.md` traced to the committed simulation output.

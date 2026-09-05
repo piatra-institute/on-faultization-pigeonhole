@@ -248,8 +248,20 @@ data/
 simulation/results/*
 !simulation/results/*.json
 output/
+# Versioned evidence for the September audit only (not scratch output).
+!simulation/output/
+simulation/output/*
+!simulation/output/september-audit/
+simulation/output/september-audit/*
+!simulation/output/september-audit/results.json
+!simulation/output/september-audit/admission.png
+!simulation/output/september-audit/noise.png
 paper/PAPER.pdf
 # raw genesis/seed material kept local
 chats/
 
 autoresearch
+
+# Generated local build records
+*.build.log
+build-manifest.json

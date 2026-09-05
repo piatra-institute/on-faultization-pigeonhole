@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "date": "2026-09-05",
+  "manuscript_sha256": "49933f4005bbd6065950f0cf75ea0f08087bbd705bf462b550164168da7ce33b",
+  "full_read": true,
+  "argument_review": true,
+  "structure_review": true,
+  "voice_review": true,
+  "source_review": true,
+  "final_read": true,
+  "notes": "Read original545-line manuscript and core code before editing. Replaced repeated taxonomy with198-word abstract and six argument-led sections, explicit measurement/move identities, paired controls and scope. Reread every final page and all121 selected claim records, including table/captions. Six voice candidates are justified technical distinctions; diagnostics are not an authorship test. Primary-source scopes disclosed; Holm check reused from earlier same-session GPT source review, not falsely reported as a successful new fetch.",
+  "remaining": "No required local revision work. This revision has not been deployed."
+}

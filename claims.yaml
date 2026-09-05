@@ -1,0 +1,1449 @@
+{
+  "schema": 1,
+  "coverage": "reviewed",
+  "reviewed_manuscript_sha256": "49933f4005bbd6065950f0cf75ea0f08087bbd705bf462b550164168da7ce33b",
+  "claims": [
+    {
+      "id": "abstract-unplaced",
+      "kind": "computation",
+      "passage": "An empty resource can look like the best destination precisely because it accepts nothing. We study this failure in a small allocation model: ten items move among seven holes using sampled load reports. The pigeonhole bound constrains fully placed assignments, but the usual overload measure records coverage, not balance, and can improve when items become unplaced. A new audit separates these outcomes, pairs random inputs across conditions, and compares load-seeking rules with random movement, staying put, and an arrival-aware alternative. Across thirty seed tapes, closing five holes leaves a mean of 5.03 items unplaced under the original comparison rule. Sampling every hole does not help; trying another candidate after rejection places every item. Tiny Gaussian errors also depend on the implementation. Truncating noisy loads and leaving them unquantized both worsen allocation, whereas nearest-integer rounding preserves the noiseless result at the smallest tested scale. Accounting for the arriving item prevents that endpoint loss, although movement continues. Finally, blocking entry preserves existing occupancy; eviction creates a different recovery problem. These results identify failures in admission information and local cost comparisons. They support a method for inspecting a perturbation model, with no additional inference about cognition or access to mathematical patterns.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/closed~15/final/unplaced/mean",
+        "reported": "5.03",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "math-load_vectors_checked",
+      "kind": "computation",
+      "passage": "The model's size allows direct checks. Enumeration of 8,008 load vectors confirms a minimum $Q$ of 16 for ten items and seven open holes. Among the 282,475,249 fully placed labeled assignments, 29,635,200 cover every hole and 15,876,000 are balanced. Thus independent uniform placement starts with complete coverage with probability 0.1049 and balance with probability 0.0562. A policy that improves on these starts is doing something measurable; the bound alone does not make it happen.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/mathematics/load_vectors_checked",
+        "reported": "8,008",
+        "scale": 1,
+        "decimals": 0,
+        "units": "exact combinatorial count or probability",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "math-minimum_squared_load",
+      "kind": "computation",
+      "passage": "The model's size allows direct checks. Enumeration of 8,008 load vectors confirms a minimum $Q$ of 16 for ten items and seven open holes. Among the 282,475,249 fully placed labeled assignments, 29,635,200 cover every hole and 15,876,000 are balanced. Thus independent uniform placement starts with complete coverage with probability 0.1049 and balance with probability 0.0562. A policy that improves on these starts is doing something measurable; the bound alone does not make it happen.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/mathematics/minimum_squared_load",
+        "reported": "16",
+        "scale": 1,
+        "decimals": 0,
+        "units": "exact combinatorial count or probability",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "math-full_assignment_states",
+      "kind": "computation",
+      "passage": "The model's size allows direct checks. Enumeration of 8,008 load vectors confirms a minimum $Q$ of 16 for ten items and seven open holes. Among the 282,475,249 fully placed labeled assignments, 29,635,200 cover every hole and 15,876,000 are balanced. Thus independent uniform placement starts with complete coverage with probability 0.1049 and balance with probability 0.0562. A policy that improves on these starts is doing something measurable; the bound alone does not make it happen.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/mathematics/full_assignment_states",
+        "reported": "282,475,249",
+        "scale": 1,
+        "decimals": 0,
+        "units": "exact combinatorial count or probability",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "math-coverage_assignments",
+      "kind": "computation",
+      "passage": "The model's size allows direct checks. Enumeration of 8,008 load vectors confirms a minimum $Q$ of 16 for ten items and seven open holes. Among the 282,475,249 fully placed labeled assignments, 29,635,200 cover every hole and 15,876,000 are balanced. Thus independent uniform placement starts with complete coverage with probability 0.1049 and balance with probability 0.0562. A policy that improves on these starts is doing something measurable; the bound alone does not make it happen.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/mathematics/coverage_assignments",
+        "reported": "29,635,200",
+        "scale": 1,
+        "decimals": 0,
+        "units": "exact combinatorial count or probability",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "math-balanced_assignments",
+      "kind": "computation",
+      "passage": "The model's size allows direct checks. Enumeration of 8,008 load vectors confirms a minimum $Q$ of 16 for ten items and seven open holes. Among the 282,475,249 fully placed labeled assignments, 29,635,200 cover every hole and 15,876,000 are balanced. Thus independent uniform placement starts with complete coverage with probability 0.1049 and balance with probability 0.0562. A policy that improves on these starts is doing something measurable; the bound alone does not make it happen.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/mathematics/balanced_assignments",
+        "reported": "15,876,000",
+        "scale": 1,
+        "decimals": 0,
+        "units": "exact combinatorial count or probability",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "math-uniform_coverage_probability",
+      "kind": "computation",
+      "passage": "The model's size allows direct checks. Enumeration of 8,008 load vectors confirms a minimum $Q$ of 16 for ten items and seven open holes. Among the 282,475,249 fully placed labeled assignments, 29,635,200 cover every hole and 15,876,000 are balanced. Thus independent uniform placement starts with complete coverage with probability 0.1049 and balance with probability 0.0562. A policy that improves on these starts is doing something measurable; the bound alone does not make it happen.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/mathematics/uniform_coverage_probability",
+        "reported": "0.1049",
+        "scale": 1,
+        "decimals": 4,
+        "units": "exact combinatorial count or probability",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "math-uniform_balance_probability",
+      "kind": "computation",
+      "passage": "The model's size allows direct checks. Enumeration of 8,008 load vectors confirms a minimum $Q$ of 16 for ten items and seven open holes. Among the 282,475,249 fully placed labeled assignments, 29,635,200 cover every hole and 15,876,000 are balanced. Thus independent uniform placement starts with complete coverage with probability 0.1049 and balance with probability 0.0562. A policy that improves on these starts is doing something measurable; the bound alone does not make it happen.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/mathematics/uniform_balance_probability",
+        "reported": "0.0562",
+        "scale": 1,
+        "decimals": 4,
+        "units": "exact combinatorial count or probability",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "design-steps",
+      "kind": "computation",
+      "passage": "The audit uses ten items, seven holes and 500 sequential activations per run. Thirty independent seed tapes, numbered 6000–6029, determine initialization, activated items, ordered candidate samples and Gaussian errors through separate random streams. Conditions within a seed receive the same tapes. This matters because giving two policies the same seed does not keep their activation sequences matched if they consume different numbers of random draws.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/protocol/steps",
+        "reported": "500",
+        "scale": 1,
+        "decimals": 0,
+        "units": "activations",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "design-seed-start",
+      "kind": "computation",
+      "passage": "The audit uses ten items, seven holes and 500 sequential activations per run. Thirty independent seed tapes, numbered 6000–6029, determine initialization, activated items, ordered candidate samples and Gaussian errors through separate random streams. Conditions within a seed receive the same tapes. This matters because giving two policies the same seed does not keep their activation sequences matched if they consume different numbers of random draws.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/protocol/seeds/0",
+        "reported": "6000",
+        "scale": 1,
+        "decimals": 0,
+        "units": "seed identifier",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "design-seed-end",
+      "kind": "computation",
+      "passage": "The audit uses ten items, seven holes and 500 sequential activations per run. Thirty independent seed tapes, numbered 6000–6029, determine initialization, activated items, ordered candidate samples and Gaussian errors through separate random streams. Conditions within a seed receive the same tapes. This matters because giving two policies the same seed does not keep their activation sequences matched if they consume different numbers of random draws.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/protocol/seeds/29",
+        "reported": "6029",
+        "scale": 1,
+        "decimals": 0,
+        "units": "seed identifier",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-random-Q",
+      "kind": "computation",
+      "passage": "With all holes open, both load-seeking rules finish balanced in every run, from both uniform and concentrated starts. Random movement visits coverage and balance in every run too, but its final mean squared load is 22.33, compared with 16.00 for greedy. The paired excess is 6.33, with interval [4.83, 7.84], from either start. Reaching a state once is weak evidence that a process maintains it. Staying put retains mean squared loads of 23.13 from uniform starts and 100.00 from concentrated starts.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1random/final/squared_load/mean",
+        "reported": "22.33",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-greedy-Q",
+      "kind": "computation",
+      "passage": "With all holes open, both load-seeking rules finish balanced in every run, from both uniform and concentrated starts. Random movement visits coverage and balance in every run too, but its final mean squared load is 22.33, compared with 16.00 for greedy. The paired excess is 6.33, with interval [4.83, 7.84], from either start. Reaching a state once is weak evidence that a process maintains it. Staying put retains mean squared loads of 23.13 from uniform starts and 100.00 from concentrated starts.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1greedy/final/squared_load/mean",
+        "reported": "16.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-uniform-effect",
+      "kind": "computation",
+      "passage": "With all holes open, both load-seeking rules finish balanced in every run, from both uniform and concentrated starts. Random movement visits coverage and balance in every run too, but its final mean squared load is 22.33, compared with 16.00 for greedy. The paired excess is 6.33, with interval [4.83, 7.84], from either start. Reaching a state once is weak evidence that a process maintains it. Staying put retains mean squared loads of 23.13 from uniform starts and 100.00 from concentrated starts.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/uniform~1random - uniform~1greedy: squared_load/difference",
+        "reported": "6.33",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-uniform-low",
+      "kind": "computation",
+      "passage": "With all holes open, both load-seeking rules finish balanced in every run, from both uniform and concentrated starts. Random movement visits coverage and balance in every run too, but its final mean squared load is 22.33, compared with 16.00 for greedy. The paired excess is 6.33, with interval [4.83, 7.84], from either start. Reaching a state once is weak evidence that a process maintains it. Staying put retains mean squared loads of 23.13 from uniform starts and 100.00 from concentrated starts.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/uniform~1random - uniform~1greedy: squared_load/ci_low",
+        "reported": "4.83",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-uniform-high",
+      "kind": "computation",
+      "passage": "With all holes open, both load-seeking rules finish balanced in every run, from both uniform and concentrated starts. Random movement visits coverage and balance in every run too, but its final mean squared load is 22.33, compared with 16.00 for greedy. The paired excess is 6.33, with interval [4.83, 7.84], from either start. Reaching a state once is weak evidence that a process maintains it. Staying put retains mean squared loads of 23.13 from uniform starts and 100.00 from concentrated starts.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/uniform~1random - uniform~1greedy: squared_load/ci_high",
+        "reported": "7.84",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-pile-effect",
+      "kind": "computation",
+      "passage": "With all holes open, both load-seeking rules finish balanced in every run, from both uniform and concentrated starts. Random movement visits coverage and balance in every run too, but its final mean squared load is 22.33, compared with 16.00 for greedy. The paired excess is 6.33, with interval [4.83, 7.84], from either start. Reaching a state once is weak evidence that a process maintains it. Staying put retains mean squared loads of 23.13 from uniform starts and 100.00 from concentrated starts.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/pile~1random - pile~1greedy: squared_load/difference",
+        "reported": "6.33",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-pile-low",
+      "kind": "computation",
+      "passage": "With all holes open, both load-seeking rules finish balanced in every run, from both uniform and concentrated starts. Random movement visits coverage and balance in every run too, but its final mean squared load is 22.33, compared with 16.00 for greedy. The paired excess is 6.33, with interval [4.83, 7.84], from either start. Reaching a state once is weak evidence that a process maintains it. Staying put retains mean squared loads of 23.13 from uniform starts and 100.00 from concentrated starts.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/pile~1random - pile~1greedy: squared_load/ci_low",
+        "reported": "4.83",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-pile-high",
+      "kind": "computation",
+      "passage": "With all holes open, both load-seeking rules finish balanced in every run, from both uniform and concentrated starts. Random movement visits coverage and balance in every run too, but its final mean squared load is 22.33, compared with 16.00 for greedy. The paired excess is 6.33, with interval [4.83, 7.84], from either start. Reaching a state once is weak evidence that a process maintains it. Staying put retains mean squared loads of 23.13 from uniform starts and 100.00 from concentrated starts.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/pile~1random - pile~1greedy: squared_load/ci_high",
+        "reported": "7.84",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-overload",
+      "kind": "computation",
+      "passage": "The healthy greedy rule's overload stops changing after a mean of 4.17 activations from uniform starts. Its last assignment change occurs at a mean of 499.17. It makes another 288.07 moves, on average, after first achieving coverage. The arrival-aware rule finishes with the same balanced load vector, up to permutation, but its last move occurs at a mean of 5.67. The neutral moves allowed by the pre-arrival comparison explain the difference.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1greedy/process/last_overload_change/mean",
+        "reported": "4.17",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-move",
+      "kind": "computation",
+      "passage": "The healthy greedy rule's overload stops changing after a mean of 4.17 activations from uniform starts. Its last assignment change occurs at a mean of 499.17. It makes another 288.07 moves, on average, after first achieving coverage. The arrival-aware rule finishes with the same balanced load vector, up to permutation, but its last move occurs at a mean of 5.67. The neutral moves allowed by the pre-arrival comparison explain the difference.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1greedy/process/last_assignment_change/mean",
+        "reported": "499.17",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-post-cover",
+      "kind": "computation",
+      "passage": "The healthy greedy rule's overload stops changing after a mean of 4.17 activations from uniform starts. Its last assignment change occurs at a mean of 499.17. It makes another 288.07 moves, on average, after first achieving coverage. The arrival-aware rule finishes with the same balanced load vector, up to permutation, but its last move occurs at a mean of 5.67. The neutral moves allowed by the pre-arrival comparison explain the difference.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1greedy/process/moves_after_first_coverage/mean",
+        "reported": "288.07",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "healthy-arrival",
+      "kind": "computation",
+      "passage": "The healthy greedy rule's overload stops changing after a mean of 4.17 activations from uniform starts. Its last assignment change occurs at a mean of 499.17. It makes another 288.07 moves, on average, after first achieving coverage. The arrival-aware rule finishes with the same balanced load vector, up to permutation, but its last move occurs at a mean of 5.67. The neutral moves allowed by the pre-arrival comparison explain the difference.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1arrival/process/last_assignment_change/mean",
+        "reported": "5.67",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "closed-unplaced",
+      "kind": "computation",
+      "passage": "Static closure exposes a more consequential mistake. With five holes closed and a three-hole sample, the mean final unplaced count is 5.03. Both accepting holes are occupied in every run, yet no run places all items. The mean overload is only 2.97, below the fully placed seven-hole minimum. The apparent improvement is missing work.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/closed~15/final/unplaced/mean",
+        "reported": "5.03",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "closed-O",
+      "kind": "computation",
+      "passage": "Static closure exposes a more consequential mistake. With five holes closed and a three-hole sample, the mean final unplaced count is 5.03. Both accepting holes are occupied in every run, yet no run places all items. The mean overload is only 2.97, below the fully placed seven-hole minimum. The apparent improvement is missing work.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/closed~15/final/overload/mean",
+        "reported": "2.97",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "admission-figure-U",
+      "kind": "computation",
+      "passage": "![Admission and coverage at the end of the five-closure runs. Bars show means over thirty paired tapes. Three- and seven-hole samples leave 5.03 items unplaced; one-hole sampling and within-activation retry leave none. All four conditions occupy both accepting holes. Retry uses a three-hole sample.](../simulation/output/september-audit/admission.png){width=100%}",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/closed~15/final/unplaced/mean",
+        "reported": "5.03",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "admission-figure-full-U",
+      "kind": "computation",
+      "passage": "![Admission and coverage at the end of the five-closure runs. Bars show means over thirty paired tapes. Three- and seven-hole samples leave 5.03 items unplaced; one-hole sampling and within-activation retry leave none. All four conditions occupy both accepting holes. Retry uses a three-hole sample.](../simulation/output/september-audit/admission.png){width=100%}",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/closed~15~1radius7/final/unplaced/mean",
+        "reported": "5.03",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "retry-effect-effect",
+      "kind": "computation",
+      "passage": "Inspecting all seven holes yields the same final unplaced count as inspecting three, on every tape. Inspecting only one allows placement to finish in every run, because an accepting destination can then be sampled without a closed competitor. Within-activation retry also places every item. Its paired reduction in unplaced count is 5.03, with interval [4.45, 5.62]. The retry control spends a mean of 1083.53 admission attempts against 500.00 without retry, so the additional progress has an explicit cost.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/closed~15~1retry - closed~15: unplaced/difference",
+        "reported": "5.03",
+        "scale": -1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "retry-effect-low",
+      "kind": "computation",
+      "passage": "Inspecting all seven holes yields the same final unplaced count as inspecting three, on every tape. Inspecting only one allows placement to finish in every run, because an accepting destination can then be sampled without a closed competitor. Within-activation retry also places every item. Its paired reduction in unplaced count is 5.03, with interval [4.45, 5.62]. The retry control spends a mean of 1083.53 admission attempts against 500.00 without retry, so the additional progress has an explicit cost.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/closed~15~1retry - closed~15: unplaced/ci_high",
+        "reported": "4.45",
+        "scale": -1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "retry-effect-high",
+      "kind": "computation",
+      "passage": "Inspecting all seven holes yields the same final unplaced count as inspecting three, on every tape. Inspecting only one allows placement to finish in every run, because an accepting destination can then be sampled without a closed competitor. Within-activation retry also places every item. Its paired reduction in unplaced count is 5.03, with interval [4.45, 5.62]. The retry control spends a mean of 1083.53 admission attempts against 500.00 without retry, so the additional progress has an explicit cost.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/closed~15~1retry - closed~15: unplaced/ci_low",
+        "reported": "5.62",
+        "scale": -1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "retry-cost",
+      "kind": "computation",
+      "passage": "Inspecting all seven holes yields the same final unplaced count as inspecting three, on every tape. Inspecting only one allows placement to finish in every run, because an accepting destination can then be sampled without a closed competitor. Within-activation retry also places every item. Its paired reduction in unplaced count is 5.03, with interval [4.45, 5.62]. The retry control spends a mean of 1083.53 admission attempts against 500.00 without retry, so the additional progress has an explicit cost.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/closed~15~1retry/process/admission_attempts/mean",
+        "reported": "1083.53",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "no-retry-cost",
+      "kind": "computation",
+      "passage": "Inspecting all seven holes yields the same final unplaced count as inspecting three, on every tape. Inspecting only one allows placement to finish in every run, because an accepting destination can then be sampled without a closed competitor. Within-activation retry also places every item. Its paired reduction in unplaced count is 5.03, with interval [4.45, 5.62]. The retry control spends a mean of 1083.53 admission attempts against 500.00 without retry, so the additional progress has an explicit cost.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/closed~15/process/admission_attempts/mean",
+        "reported": "500.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-noise-healthy-Q",
+      "kind": "computation",
+      "passage": "We compare this encoding with nearest-integer rounding followed by clipping, and with signed unquantized reports. The current occupied load remains exact in every variant. At noise standard deviation $10^{-6}$, the greedy rule's final mean $Q$ rises from 16.00 to 17.60 with truncation. The paired increase is 1.60 [0.81, 2.39], with Holm-adjusted $p=0.0023$. Nearest-integer rounding reproduces the noiseless result at this scale.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1greedy/final/squared_load/mean",
+        "reported": "16.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-noise-truncate-Q",
+      "kind": "computation",
+      "passage": "We compare this encoding with nearest-integer rounding followed by clipping, and with signed unquantized reports. The current occupied load remains exact in every variant. At noise standard deviation $10^{-6}$, the greedy rule's final mean $Q$ rises from 16.00 to 17.60 with truncation. The paired increase is 1.60 [0.81, 2.39], with Holm-adjusted $p=0.0023$. Nearest-integer rounding reproduces the noiseless result at this scale.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/noise~1greedy~1truncate~1tiny/final/squared_load/mean",
+        "reported": "17.60",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-noise-truncate-effect",
+      "kind": "computation",
+      "passage": "We compare this encoding with nearest-integer rounding followed by clipping, and with signed unquantized reports. The current occupied load remains exact in every variant. At noise standard deviation $10^{-6}$, the greedy rule's final mean $Q$ rises from 16.00 to 17.60 with truncation. The paired increase is 1.60 [0.81, 2.39], with Holm-adjusted $p=0.0023$. Nearest-integer rounding reproduces the noiseless result at this scale.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1truncate~1tiny - uniform~1greedy: squared_load/difference",
+        "reported": "1.60",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-noise-truncate-low",
+      "kind": "computation",
+      "passage": "We compare this encoding with nearest-integer rounding followed by clipping, and with signed unquantized reports. The current occupied load remains exact in every variant. At noise standard deviation $10^{-6}$, the greedy rule's final mean $Q$ rises from 16.00 to 17.60 with truncation. The paired increase is 1.60 [0.81, 2.39], with Holm-adjusted $p=0.0023$. Nearest-integer rounding reproduces the noiseless result at this scale.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1truncate~1tiny - uniform~1greedy: squared_load/ci_low",
+        "reported": "0.81",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-noise-truncate-high",
+      "kind": "computation",
+      "passage": "We compare this encoding with nearest-integer rounding followed by clipping, and with signed unquantized reports. The current occupied load remains exact in every variant. At noise standard deviation $10^{-6}$, the greedy rule's final mean $Q$ rises from 16.00 to 17.60 with truncation. The paired increase is 1.60 [0.81, 2.39], with Holm-adjusted $p=0.0023$. Nearest-integer rounding reproduces the noiseless result at this scale.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1truncate~1tiny - uniform~1greedy: squared_load/ci_high",
+        "reported": "2.39",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-noise-truncate-p",
+      "kind": "computation",
+      "passage": "We compare this encoding with nearest-integer rounding followed by clipping, and with signed unquantized reports. The current occupied load remains exact in every variant. At noise standard deviation $10^{-6}$, the greedy rule's final mean $Q$ rises from 16.00 to 17.60 with truncation. The paired increase is 1.60 [0.81, 2.39], with Holm-adjusted $p=0.0023$. Nearest-integer rounding reproduces the noiseless result at this scale.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1truncate~1tiny - uniform~1greedy: squared_load/p_holm",
+        "reported": "0.0023",
+        "scale": 1,
+        "decimals": 4,
+        "units": "Holm-adjusted p",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-noise-float-Q",
+      "kind": "computation",
+      "passage": "Truncation is only part of the explanation. Unquantized tiny noise gives mean $Q=17.47$, an increase of 1.47 [0.73, 2.20], also with adjusted $p=0.0023$. Two truly equal loads lie on the greedy rule's decision boundary: a slightly underestimated destination becomes eligible, even though the arriving item makes it more crowded. Removing integer conversion leaves that comparison intact.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/noise~1greedy~1float~1tiny/final/squared_load/mean",
+        "reported": "17.47",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-noise-float-effect",
+      "kind": "computation",
+      "passage": "Truncation is only part of the explanation. Unquantized tiny noise gives mean $Q=17.47$, an increase of 1.47 [0.73, 2.20], also with adjusted $p=0.0023$. Two truly equal loads lie on the greedy rule's decision boundary: a slightly underestimated destination becomes eligible, even though the arriving item makes it more crowded. Removing integer conversion leaves that comparison intact.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1float~1tiny - uniform~1greedy: squared_load/difference",
+        "reported": "1.47",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-noise-float-low",
+      "kind": "computation",
+      "passage": "Truncation is only part of the explanation. Unquantized tiny noise gives mean $Q=17.47$, an increase of 1.47 [0.73, 2.20], also with adjusted $p=0.0023$. Two truly equal loads lie on the greedy rule's decision boundary: a slightly underestimated destination becomes eligible, even though the arriving item makes it more crowded. Removing integer conversion leaves that comparison intact.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1float~1tiny - uniform~1greedy: squared_load/ci_low",
+        "reported": "0.73",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-noise-float-high",
+      "kind": "computation",
+      "passage": "Truncation is only part of the explanation. Unquantized tiny noise gives mean $Q=17.47$, an increase of 1.47 [0.73, 2.20], also with adjusted $p=0.0023$. Two truly equal loads lie on the greedy rule's decision boundary: a slightly underestimated destination becomes eligible, even though the arriving item makes it more crowded. Removing integer conversion leaves that comparison intact.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1float~1tiny - uniform~1greedy: squared_load/ci_high",
+        "reported": "2.20",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-noise-float-p",
+      "kind": "computation",
+      "passage": "Truncation is only part of the explanation. Unquantized tiny noise gives mean $Q=17.47$, an increase of 1.47 [0.73, 2.20], also with adjusted $p=0.0023$. Two truly equal loads lie on the greedy rule's decision boundary: a slightly underestimated destination becomes eligible, even though the arriving item makes it more crowded. Removing integer conversion leaves that comparison intact.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1float~1tiny - uniform~1greedy: squared_load/p_holm",
+        "reported": "0.0023",
+        "scale": 1,
+        "decimals": 4,
+        "units": "Holm-adjusted p",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "noise-figure-bound",
+      "kind": "computation",
+      "passage": "![Mean final squared load under three report encodings and two comparison rules. All conditions use thirty paired tapes. The horizontal axis spaces the three tested noise scales categorically; connecting lines do not estimate an intervening response curve. The reference line is the balanced value, 16.](../simulation/output/september-audit/noise.png){width=100%}",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/mathematics/minimum_squared_load",
+        "reported": "16",
+        "scale": 1,
+        "decimals": 0,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-arrival-Q-truncate",
+      "kind": "computation",
+      "passage": "The arrival-aware rule finishes at $Q=16$ in every tiny-noise condition. This is an endpoint result, not a claim that noisy trajectories are unchanged. With tiny truncated noise, its last move occurs at a mean of 498.33 activations, versus 5.67 without noise. A small underestimate can admit a truly neutral move under the stricter comparison. It need not admit a harmful one.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/noise~1arrival~1truncate~1tiny/final/squared_load/mean",
+        "reported": "16",
+        "scale": 1,
+        "decimals": 0,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-arrival-Q-round",
+      "kind": "computation",
+      "passage": "The arrival-aware rule finishes at $Q=16$ in every tiny-noise condition. This is an endpoint result, not a claim that noisy trajectories are unchanged. With tiny truncated noise, its last move occurs at a mean of 498.33 activations, versus 5.67 without noise. A small underestimate can admit a truly neutral move under the stricter comparison. It need not admit a harmful one.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/noise~1arrival~1round~1tiny/final/squared_load/mean",
+        "reported": "16",
+        "scale": 1,
+        "decimals": 0,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-arrival-Q-float",
+      "kind": "computation",
+      "passage": "The arrival-aware rule finishes at $Q=16$ in every tiny-noise condition. This is an endpoint result, not a claim that noisy trajectories are unchanged. With tiny truncated noise, its last move occurs at a mean of 498.33 activations, versus 5.67 without noise. A small underestimate can admit a truly neutral move under the stricter comparison. It need not admit a harmful one.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/noise~1arrival~1float~1tiny/final/squared_load/mean",
+        "reported": "16",
+        "scale": 1,
+        "decimals": 0,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "tiny-arrival-moves",
+      "kind": "computation",
+      "passage": "The arrival-aware rule finishes at $Q=16$ in every tiny-noise condition. This is an endpoint result, not a claim that noisy trajectories are unchanged. With tiny truncated noise, its last move occurs at a mean of 498.33 activations, versus 5.67 without noise. A small underestimate can admit a truly neutral move under the stricter comparison. It need not admit a harmful one.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/noise~1arrival~1truncate~1tiny/process/last_assignment_change/mean",
+        "reported": "498.33",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "honest-arrival-moves",
+      "kind": "computation",
+      "passage": "The arrival-aware rule finishes at $Q=16$ in every tiny-noise condition. This is an endpoint result, not a claim that noisy trajectories are unchanged. With tiny truncated noise, its last move occurs at a mean of 498.33 activations, versus 5.67 without noise. A small underestimate can admit a truly neutral move under the stricter comparison. It need not admit a harmful one.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1arrival/process/last_assignment_change/mean",
+        "reported": "5.67",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "half-noise-effect",
+      "kind": "computation",
+      "passage": "At standard deviation 0.5, greedy truncation exceeds rounding by 0.80 in mean $Q$, with interval [0.13, 1.47]. The adjusted $p$ is 0.103, so this contrast does not clear the familywise threshold of 0.05. These scales do not establish a general noise-tolerance curve. They isolate a conversion discontinuity and a decision boundary that the earlier description of “discrete fidelity” obscured.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1truncate~1half - noise~1greedy~1round~1half: squared_load/difference",
+        "reported": "0.80",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "half-noise-low",
+      "kind": "computation",
+      "passage": "At standard deviation 0.5, greedy truncation exceeds rounding by 0.80 in mean $Q$, with interval [0.13, 1.47]. The adjusted $p$ is 0.103, so this contrast does not clear the familywise threshold of 0.05. These scales do not establish a general noise-tolerance curve. They isolate a conversion discontinuity and a decision boundary that the earlier description of “discrete fidelity” obscured.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1truncate~1half - noise~1greedy~1round~1half: squared_load/ci_low",
+        "reported": "0.13",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "half-noise-high",
+      "kind": "computation",
+      "passage": "At standard deviation 0.5, greedy truncation exceeds rounding by 0.80 in mean $Q$, with interval [0.13, 1.47]. The adjusted $p$ is 0.103, so this contrast does not clear the familywise threshold of 0.05. These scales do not establish a general noise-tolerance curve. They isolate a conversion discontinuity and a decision boundary that the earlier description of “discrete fidelity” obscured.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1truncate~1half - noise~1greedy~1round~1half: squared_load/ci_high",
+        "reported": "1.47",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "half-noise-p",
+      "kind": "computation",
+      "passage": "At standard deviation 0.5, greedy truncation exceeds rounding by 0.80 in mean $Q$, with interval [0.13, 1.47]. The adjusted $p$ is 0.103, so this contrast does not clear the familywise threshold of 0.05. These scales do not establish a general noise-tolerance curve. They isolate a conversion discontinuity and a decision boundary that the earlier description of “discrete fidelity” obscured.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/noise~1greedy~1truncate~1half - noise~1greedy~1round~1half: squared_load/p_holm",
+        "reported": "0.103",
+        "scale": 1,
+        "decimals": 3,
+        "units": "Holm-adjusted p",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "table-greedy-1",
+      "kind": "computation",
+      "passage": "| Greedy | 3.00 | 3.60 | 16.00 | 20.47 |",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1greedy/final/overload/mean",
+        "reported": "3.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "overload",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "table-greedy-2",
+      "kind": "computation",
+      "passage": "| Greedy | 3.00 | 3.60 | 16.00 | 20.47 |",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/misleading~1greedy/final/overload/mean",
+        "reported": "3.60",
+        "scale": 1,
+        "decimals": 2,
+        "units": "overload",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "table-greedy-3",
+      "kind": "computation",
+      "passage": "| Greedy | 3.00 | 3.60 | 16.00 | 20.47 |",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1greedy/final/squared_load/mean",
+        "reported": "16.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "squared_load",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "table-greedy-4",
+      "kind": "computation",
+      "passage": "| Greedy | 3.00 | 3.60 | 16.00 | 20.47 |",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/misleading~1greedy/final/squared_load/mean",
+        "reported": "20.47",
+        "scale": 1,
+        "decimals": 2,
+        "units": "squared_load",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "table-arrival-1",
+      "kind": "computation",
+      "passage": "| Arrival-aware | 3.00 | 3.00 | 16.00 | 17.00 |",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1arrival/final/overload/mean",
+        "reported": "3.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "overload",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "table-arrival-2",
+      "kind": "computation",
+      "passage": "| Arrival-aware | 3.00 | 3.00 | 16.00 | 17.00 |",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/misleading~1arrival/final/overload/mean",
+        "reported": "3.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "overload",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "table-arrival-3",
+      "kind": "computation",
+      "passage": "| Arrival-aware | 3.00 | 3.00 | 16.00 | 17.00 |",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1arrival/final/squared_load/mean",
+        "reported": "16.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "squared_load",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "table-arrival-4",
+      "kind": "computation",
+      "passage": "| Arrival-aware | 3.00 | 3.00 | 16.00 | 17.00 |",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/misleading~1arrival/final/squared_load/mean",
+        "reported": "17.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "squared_load",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "misleading-greedy-effect",
+      "kind": "computation",
+      "passage": "For greedy, the overload increase is 0.60 [0.31, 0.89]. Arrival-aware preserves full coverage in every run, but its squared-load increase is 1.00 [0.39, 1.61], with adjusted $p=0.0139$. A coverage-only assessment would miss this concentration cost. Neither rule verifies the reported occupancy, and the arrival-aware correction is insufficient against a persistent false report.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/misleading~1greedy - uniform~1greedy: overload/difference",
+        "reported": "0.60",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "misleading-greedy-low",
+      "kind": "computation",
+      "passage": "For greedy, the overload increase is 0.60 [0.31, 0.89]. Arrival-aware preserves full coverage in every run, but its squared-load increase is 1.00 [0.39, 1.61], with adjusted $p=0.0139$. A coverage-only assessment would miss this concentration cost. Neither rule verifies the reported occupancy, and the arrival-aware correction is insufficient against a persistent false report.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/misleading~1greedy - uniform~1greedy: overload/ci_low",
+        "reported": "0.31",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "misleading-greedy-high",
+      "kind": "computation",
+      "passage": "For greedy, the overload increase is 0.60 [0.31, 0.89]. Arrival-aware preserves full coverage in every run, but its squared-load increase is 1.00 [0.39, 1.61], with adjusted $p=0.0139$. A coverage-only assessment would miss this concentration cost. Neither rule verifies the reported occupancy, and the arrival-aware correction is insufficient against a persistent false report.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/misleading~1greedy - uniform~1greedy: overload/ci_high",
+        "reported": "0.89",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "misleading-arrival-effect",
+      "kind": "computation",
+      "passage": "For greedy, the overload increase is 0.60 [0.31, 0.89]. Arrival-aware preserves full coverage in every run, but its squared-load increase is 1.00 [0.39, 1.61], with adjusted $p=0.0139$. A coverage-only assessment would miss this concentration cost. Neither rule verifies the reported occupancy, and the arrival-aware correction is insufficient against a persistent false report.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/misleading~1arrival - uniform~1arrival: squared_load/difference",
+        "reported": "1.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "misleading-arrival-low",
+      "kind": "computation",
+      "passage": "For greedy, the overload increase is 0.60 [0.31, 0.89]. Arrival-aware preserves full coverage in every run, but its squared-load increase is 1.00 [0.39, 1.61], with adjusted $p=0.0139$. A coverage-only assessment would miss this concentration cost. Neither rule verifies the reported occupancy, and the arrival-aware correction is insufficient against a persistent false report.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/misleading~1arrival - uniform~1arrival: squared_load/ci_low",
+        "reported": "0.39",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "misleading-arrival-high",
+      "kind": "computation",
+      "passage": "For greedy, the overload increase is 0.60 [0.31, 0.89]. Arrival-aware preserves full coverage in every run, but its squared-load increase is 1.00 [0.39, 1.61], with adjusted $p=0.0139$. A coverage-only assessment would miss this concentration cost. Neither rule verifies the reported occupancy, and the arrival-aware correction is insufficient against a persistent false report.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/misleading~1arrival - uniform~1arrival: squared_load/ci_high",
+        "reported": "1.61",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "misleading-arrival-p",
+      "kind": "computation",
+      "passage": "For greedy, the overload increase is 0.60 [0.31, 0.89]. Arrival-aware preserves full coverage in every run, but its squared-load increase is 1.00 [0.39, 1.61], with adjusted $p=0.0139$. A coverage-only assessment would miss this concentration cost. Neither rule verifies the reported occupancy, and the arrival-aware correction is insufficient against a persistent false report.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/contrasts/misleading~1arrival - uniform~1arrival: squared_load/p_holm",
+        "reported": "0.0139",
+        "scale": 1,
+        "decimals": 4,
+        "units": "Holm-adjusted p",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "eviction-unplaced",
+      "kind": "computation",
+      "passage": "Eviction changes the experiment. At closure, the affected items become unplaced. Their mean count is 1.50, while overload falls from 3.00 to 2.50. Once again, a lower overload accompanies a worse placement state. Every run subsequently replaces its evicted items before reopening, with a mean latency of 21.57 activations. Immediately before reopening, all items occupy the six accepting holes and overload is 4. Reopening does not move anyone by itself; full seven-hole coverage returns after a further mean of 2.73 activations.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/dynamic~1evict/events/100/after/unplaced/mean",
+        "reported": "1.50",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "eviction-before-O",
+      "kind": "computation",
+      "passage": "Eviction changes the experiment. At closure, the affected items become unplaced. Their mean count is 1.50, while overload falls from 3.00 to 2.50. Once again, a lower overload accompanies a worse placement state. Every run subsequently replaces its evicted items before reopening, with a mean latency of 21.57 activations. Immediately before reopening, all items occupy the six accepting holes and overload is 4. Reopening does not move anyone by itself; full seven-hole coverage returns after a further mean of 2.73 activations.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/dynamic~1evict/events/100/before/overload/mean",
+        "reported": "3.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "eviction-after-O",
+      "kind": "computation",
+      "passage": "Eviction changes the experiment. At closure, the affected items become unplaced. Their mean count is 1.50, while overload falls from 3.00 to 2.50. Once again, a lower overload accompanies a worse placement state. Every run subsequently replaces its evicted items before reopening, with a mean latency of 21.57 activations. Immediately before reopening, all items occupy the six accepting holes and overload is 4. Reopening does not move anyone by itself; full seven-hole coverage returns after a further mean of 2.73 activations.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/dynamic~1evict/events/100/after/overload/mean",
+        "reported": "2.50",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "eviction-replacement",
+      "kind": "computation",
+      "passage": "Eviction changes the experiment. At closure, the affected items become unplaced. Their mean count is 1.50, while overload falls from 3.00 to 2.50. Once again, a lower overload accompanies a worse placement state. Every run subsequently replaces its evicted items before reopening, with a mean latency of 21.57 activations. Immediately before reopening, all items occupy the six accepting holes and overload is 4. Reopening does not move anyone by itself; full seven-hole coverage returns after a further mean of 2.73 activations.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/dynamic~1evict/process/replacement_latency/mean",
+        "reported": "21.57",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "eviction-pre-open-O",
+      "kind": "computation",
+      "passage": "Eviction changes the experiment. At closure, the affected items become unplaced. Their mean count is 1.50, while overload falls from 3.00 to 2.50. Once again, a lower overload accompanies a worse placement state. Every run subsequently replaces its evicted items before reopening, with a mean latency of 21.57 activations. Immediately before reopening, all items occupy the six accepting holes and overload is 4. Reopening does not move anyone by itself; full seven-hole coverage returns after a further mean of 2.73 activations.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/dynamic~1evict/events/300/before/overload/mean",
+        "reported": "4",
+        "scale": 1,
+        "decimals": 0,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "eviction-reopen",
+      "kind": "computation",
+      "passage": "Eviction changes the experiment. At closure, the affected items become unplaced. Their mean count is 1.50, while overload falls from 3.00 to 2.50. Once again, a lower overload accompanies a worse placement state. Every run subsequently replaces its evicted items before reopening, with a mean latency of 21.57 activations. Immediately before reopening, all items occupy the six accepting holes and overload is 4. Reopening does not move anyone by itself; full seven-hole coverage returns after a further mean of 2.73 activations.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/dynamic~1evict/process/reopening_coverage_latency/mean",
+        "reported": "2.73",
+        "scale": 1,
+        "decimals": 2,
+        "units": "items or load-cost units",
+        "conditions": "Thirty independent paired seed tapes 6000–6029; ten items, seven holes, 500 activations. Final-state means unless the pointer names a process or event. Pointwise paired 95% t intervals; Holm tests across the twelve declared contrasts. Scope is this fixed toy model."
+      }
+    },
+    {
+      "id": "sorting-motivation",
+      "kind": "source",
+      "passage": "We use *faultization* to mean deliberately disturbing a model's operating assumptions and inspecting what follows. The motivation comes in part from experiments on sorting arrays whose elements act locally and can be damaged [@zhang2025]. Levin's proposed relation between physical systems and mathematical patterns supplies a broader philosophical motivation [@levin2026]. Neither supplies an alternative transition rule for this allocation model. The useful experimental question is which details of the rule account for its successes and failures.",
+      "evidence": {
+        "citation_id": "zhang2025",
+        "locator": "Publisher abstract, distributed sorting/damaged-element descriptions; publication metadata.",
+        "verified": true,
+        "verification_note": "Checked these primary sections. Final issue February 2025, 33(1):25–54; online-first August 2024. Motivation only, not a claim of word coinage or evidence for the new results."
+      }
+    },
+    {
+      "id": "pattern-motivation",
+      "kind": "source",
+      "passage": "We use *faultization* to mean deliberately disturbing a model's operating assumptions and inspecting what follows. The motivation comes in part from experiments on sorting arrays whose elements act locally and can be damaged [@zhang2025]. Levin's proposed relation between physical systems and mathematical patterns supplies a broader philosophical motivation [@levin2026]. Neither supplies an alternative transition rule for this allocation model. The useful experimental question is which details of the rule account for its successes and failures.",
+      "evidence": {
+        "citation_id": "levin2026",
+        "locator": "Author's 31 March 2026 post, opening argument/table.",
+        "verified": true,
+        "verification_note": "Read opening argument and table. Philosophical proposal acknowledged; no predictive test of ontology, and reader comments are excluded."
+      }
+    },
+    {
+      "id": "congestion-accounting",
+      "kind": "source",
+      "passage": "The original greedy comparison accepts $b<a$. With truthful integer loads, it cannot raise $Q$, but it permits neutral moves when $b=a-1$. Our arrival-aware alternative requires $b+1<a$ and therefore makes only strict improvements under the same conditions. This is a special case of the cost accounting in congestion games, where the arriving player contributes to congestion [@rosenthal1973]. For this unrestricted, identical-resource, linear-load case, an unbalanced allocation always offers an improving move. Larger system size alone does not create suboptimal local minima of this cost.",
+      "evidence": {
+        "citation_id": "rosenthal1973",
+        "locator": "Primary scan, pp.65–67, resource cost definition and equilibrium proof.",
+        "verified": true,
+        "verification_note": "Read all three pages. Congestion includes the choosing player. The manuscript's global-balance result is separately derived for identical linear-load holes, not attributed to every congestion game."
+      }
+    },
+    {
+      "id": "balanced-allocation-context",
+      "kind": "source",
+      "passage": "More observations help only when the decision rule can use them appropriately. The classical balanced-allocation results study benefits of choosing among sampled loads, in both sequential and removal/replacement settings [@azar1999]. Our finite system adds relocation and rejecting destinations, uses sampling without replacement, and measures different endpoints. The closure result is not a counterexample to those theorems. It shows why their favorable intuition cannot be imported without checking what a candidate load reveals about admission.",
+      "evidence": {
+        "citation_id": "azar1999",
+        "locator": "Author-hosted paper, pp.180–183, abstract/introduction, Theorems1.1/1.2 and process definitions.",
+        "verified": true,
+        "verification_note": "Checked sequential and infinite removal/replacement settings, independent sampling with replacement and maximum-load endpoints. Present finite relocation/rejection experiment is not the same theorem."
+      }
+    },
+    {
+      "id": "holm-method",
+      "kind": "source",
+      "passage": "The design and twelve primary paired contrasts were written down before examining the new outcomes. This remains an exploratory audit, informed by the old manuscript and code, rather than a preregistered study. Reported intervals are pointwise 95% paired $t$ intervals across seed tapes. Holm adjustment applies to the twelve tests as one family, not to their intervals [@holm1979]. Identical observed differences produce degenerate sample intervals; they do not establish population equivalence. Other summaries are descriptive.",
+      "evidence": {
+        "citation_id": "holm1979",
+        "locator": "Primary scan pp.65–67, abstract, introduction, Scheme1; source-check reused from GPT revision in the same session.",
+        "verified": true,
+        "verification_note": "Earlier checked primary passages describe step-down familywise adjustment. Current reopens failed; do not claim a second successful full-text check. Known-value regression tests validate implementation. Intervals remain pointwise."
+      }
+    },
+    {
+      "id": "abstract-scope",
+      "kind": "interpretation",
+      "passage": "An empty resource can look like the best destination precisely because it accepts nothing. We study this failure in a small allocation model: ten items move among seven holes using sampled load reports. The pigeonhole bound constrains fully placed assignments, but the usual overload measure records coverage, not balance, and can improve when items become unplaced. A new audit separates these outcomes, pairs random inputs across conditions, and compares load-seeking rules with random movement, staying put, and an arrival-aware alternative. Across thirty seed tapes, closing five holes leaves a mean of 5.03 items unplaced under the original comparison rule. Sampling every hole does not help; trying another candidate after rejection places every item. Tiny Gaussian errors also depend on the implementation. Truncating noisy loads and leaving them unquantized both worsen allocation, whereas nearest-integer rounding preserves the noiseless result at the smallest tested scale. Accounting for the arriving item prevents that endpoint loss, although movement continues. Finally, blocking entry preserves existing occupancy; eviction creates a different recovery problem. These results identify failures in admission information and local cost comparisons. They support a method for inspecting a perturbation model, with no additional inference about cognition or access to mathematical patterns.",
+      "rationale": "Summary of bound results: thirty tapes, ten items/seven holes, five-closure failure, retry success, encoding/arrival controls, and close/evict events. No new evidence of cognition or pattern ontology."
+    },
+    {
+      "id": "refusal-vignette",
+      "kind": "definition",
+      "passage": "A hole reports zero occupants. An unplaced item chooses it and is refused entry. On a later activation, the same hole may again be the least crowded candidate. Nothing in its load report records the refusal. The item can keep making a locally reasonable choice while never obtaining a place.",
+      "rationale": "Constructed transition example, not a field observation: an empty closed hole reports0, rejects, and retains no rejection state in the item."
+    },
+    {
+      "id": "unlimited-admission",
+      "kind": "definition",
+      "passage": "This is the central difficulty in the model examined here. Each accepting hole has unlimited capacity. Closing some holes therefore need not make placement impossible; it changes what a load-seeking rule can discover and use. The distinction matters when a simulation is described as tolerating a percentage of resource loss. A low overload score may mean that work was never admitted.",
+      "rationale": "All accepting holes have unlimited admission in model._try_place; closures can prevent discovery without exhausting numerical capacity."
+    },
+    {
+      "id": "operational-faultization",
+      "kind": "definition",
+      "passage": "We use *faultization* to mean deliberately disturbing a model's operating assumptions and inspecting what follows. The motivation comes in part from experiments on sorting arrays whose elements act locally and can be damaged [@zhang2025]. Levin's proposed relation between physical systems and mathematical patterns supplies a broader philosophical motivation [@levin2026]. Neither supplies an alternative transition rule for this allocation model. The useful experimental question is which details of the rule account for its successes and failures.",
+      "rationale": "Author's usage is intervention on operating assumptions. The two cited sources motivate the question but provide no alternative rule for this model."
+    },
+    {
+      "id": "legacy-scope",
+      "kind": "definition",
+      "passage": "The September audit replaces the earlier manuscript's eight-experiment narrative. It retains the core placement model and preserves the old results, but uses new random inputs, narrower comparisons and separate measures of placement, coverage and balance. Its contribution is an account of failure mechanisms in a transparent toy system.",
+      "rationale": "Old8 experiment JSONs are preserved; new audit.py uses new seed tapes and redesigned comparisons rather than relabeling old results."
+    },
+    {
+      "id": "state-definitions",
+      "kind": "definition",
+      "passage": "Let $m$ labeled items occupy $n$ labeled holes, with unplaced items permitted. Write $\\ell_i$ for a hole's true load, $U$ for the number unplaced, $P=m-U$ for the number placed and $H$ for the number of occupied holes. The original overload measure satisfies the identity",
+      "rationale": "m,n labeled items/holes; U includes -1 assignments; loads count placed items, P=m-U; H counts positive loads."
+    },
+    {
+      "id": "overload-identity",
+      "kind": "definition",
+      "passage": "$$\nO=\\sum_i\\max(0,\\ell_i-1)=P-H.\n$$",
+      "rationale": "For each occupied hole excess=load-1. Summing gives total placed items minus count of occupied holes, including unplaced states."
+    },
+    {
+      "id": "coverage-versus-balance",
+      "kind": "definition",
+      "passage": "For a fully placed assignment with $m>n$, the pigeonhole bound is $O\\geq m-n$. Equality means every hole is occupied. It says nothing about how the remaining items are distributed. In the present system, the loads $(2,2,2,1,1,1,1)$ and $(4,1,1,1,1,1,1)$ both have overload $3$. Their sums of squared loads, $Q=\\sum_i\\ell_i^2$, are respectively $16$ and $22$. The latter measure distinguishes their concentration.",
+      "rationale": "With P=m, minimizing O means H=n. The two explicit vectors each sum10 with7 positive entries; squared sums16 and22 distinguish concentration."
+    },
+    {
+      "id": "conditional-balance-domain",
+      "kind": "definition",
+      "passage": "With $k$ accepting holes, all items placed and none retained in a closed hole, write $m=kq+r$, with $0\\leq r<k$. The minimum squared load is",
+      "rationale": "q=floor(m/k), r=m mod k; accepting-hole optimum only applied to complete placement with no retained closed-hole occupants."
+    },
+    {
+      "id": "conditional-balance-formula",
+      "kind": "definition",
+      "passage": "$$\nQ_*=(k-r)q^2+r(q+1)^2.\n$$",
+      "rationale": "A convex sum of squares is minimized by k-r loads q and r loads q+1. Do not score partial placement against a complete-placement optimum."
+    },
+    {
+      "id": "balancing-proof",
+      "kind": "interpretation",
+      "passage": "Moving an item between two loads differing by more than one reduces $Q$ until only these adjacent load sizes remain. We report balance regret $Q-Q_*$ only under those placement conditions. In other states, $U$, occupied accepting holes and occupied closed holes remain separate outcomes. Combining them into a single penalty would introduce a choice about their relative importance.",
+      "rationale": "Pairwise transfer from a>=b+2 reduces Q by at least2. Prescribed metrics do not silently choose a tradeoff between dropping work and congestion."
+    },
+    {
+      "id": "move-setup",
+      "kind": "definition",
+      "passage": "There is also a simple distinction between two local comparisons. Suppose an item currently shares a hole of load $a$ and considers a different hole of load $b$. After moving, its new load is $b+1$, and",
+      "rationale": "Destination differs from current hole; a includes mover before departure; b excludes mover before arrival."
+    },
+    {
+      "id": "move-identity",
+      "kind": "definition",
+      "passage": "$$\n\\Delta Q=(a-1)^2+(b+1)^2-a^2-b^2=2(b-a+1).\n$$",
+      "rationale": "Expand two changed squared loads exactly; DeltaQ=2(b-a+1) for any nonnegative integer loads with a>=1."
+    },
+    {
+      "id": "neutral-and-strict",
+      "kind": "interpretation",
+      "passage": "The original greedy comparison accepts $b<a$. With truthful integer loads, it cannot raise $Q$, but it permits neutral moves when $b=a-1$. Our arrival-aware alternative requires $b+1<a$ and therefore makes only strict improvements under the same conditions. This is a special case of the cost accounting in congestion games, where the arriving player contributes to congestion [@rosenthal1973]. For this unrestricted, identical-resource, linear-load case, an unbalanced allocation always offers an improving move. Larger system size alone does not create suboptimal local minima of this cost.",
+      "rationale": "True integer greedy b<a implies b<=a-1 so DeltaQ<=0; arrival-aware b+1<a makes DeltaQ<0. Any unbalanced full assignment across unrestricted identical holes has a>=b+2."
+    },
+    {
+      "id": "paired-design",
+      "kind": "definition",
+      "passage": "The audit uses ten items, seven holes and 500 sequential activations per run. Thirty independent seed tapes, numbered 6000–6029, determine initialization, activated items, ordered candidate samples and Gaussian errors through separate random streams. Conditions within a seed receive the same tapes. This matters because giving two policies the same seed does not keep their activation sequences matched if they consume different numbers of random draws.",
+      "rationale": "Protocol/tape generator specify m10,n7,500activations,30 independent tapes6000–6029 via4separate SeedSequence streams. Policies cannot consume activation draws."
+    },
+    {
+      "id": "initialization-admission",
+      "kind": "definition",
+      "passage": "The usual start gives each item a uniformly selected hole; a second proposal is tried only if the first is closed. Two refusals leave the item unplaced. Healthy controls also start with every item in the same hole. Dynamic experiments start balanced. A closed hole rejects entry and reports its true occupancy, while a misleading hole admits items but always reports zero. Neither status is separately announced to the deciding item.",
+      "rationale": "Uniform firstproposal; second only on closed refusal; two refusals unplaced. Balanced cyclic/dense starts in separate conditions. Status never given as an extra feature."
+    },
+    {
+      "id": "activation-rules",
+      "kind": "definition",
+      "passage": "At each activation, the load-seeking rules inspect three distinct holes sampled uniformly without replacement. “Radius” here means sample count, not physical distance. The item's current hole is excluded as a relocation destination, and its current load is known exactly. The greedy rule picks the lowest reported destination load below that current load. The arrival-aware rule adds the arriving item before comparing. An unplaced item regards its current cost as infinite. Ties follow the common sampled order. A rejected move leaves an existing assignment intact.",
+      "rationale": "Sample3 distinct holeIDs uniformly, exclude current as destination, exact ownload, compare reported b or b+1 with current; common stable ties. _try_place rejection retains assignment."
+    },
+    {
+      "id": "null-and-retry-costs",
+      "kind": "definition",
+      "passage": "Two null policies clarify what the load observations buy: staying put, and selecting a uniform destination without inspecting its load. A separate retry control proceeds to the next eligible candidate in the same sample after rejection. It has no memory between activations, but may spend more admission attempts. Load-based rules pay for each sampled report; the nulls make no load queries. This accounting does not pretend that an observation and an attempted admission have identical computational costs.",
+      "rationale": "Stay and random have no reports; retry uses same eligible sample within activation without persistent memory. Candidate queries and admission attempts are separate process counters."
+    },
+    {
+      "id": "condition-count",
+      "kind": "definition",
+      "passage": "The full design has 32 conditions. It varies static closures, sample count, retry, noisy-load encoding, misleading reports and close-versus-evict events. The original exploratory policy's extra probes read true loads, and its cooperative policy consults the true global potential. Those are different information privileges, so the new audit does not compare them as interchangeable local readers of the same faulty reports.",
+      "rationale": "32unique conditions checked by regression. Legacy exploratory queries true load on extra samples and cooperative computes true potential; not equal-interface baselines."
+    },
+    {
+      "id": "statistics-scope",
+      "kind": "assumption",
+      "passage": "The design and twelve primary paired contrasts were written down before examining the new outcomes. This remains an exploratory audit, informed by the old manuscript and code, rather than a preregistered study. Reported intervals are pointwise 95% paired $t$ intervals across seed tapes. Holm adjustment applies to the twelve tests as one family, not to their intervals [@holm1979]. Identical observed differences produce degenerate sample intervals; they do not establish population equivalence. Other summaries are descriptive.",
+      "rationale": "12predeclared contrasts, pointwise95% paired t intervals across30independent tapes; Holm p across12. Adequate mean-difference approximation is assumed; discreteness/small sample limit it. No equivalence margin."
+    },
+    {
+      "id": "event-time-definition",
+      "kind": "definition",
+      "passage": "We record first coverage, first balance, final state, rejected attempts and actual assignment changes. An unachieved event has a missing, censored time. The last change in overload is recorded under that name, not called convergence. Balanced allocation and a motionless system are different endpoints.",
+      "rationale": "First-time measures censored None when unachieved. Last Ochange is distinct from last policy move; mean process values carry recorded conditional sample counts."
+    },
+    {
+      "id": "healthy-endpoints",
+      "kind": "interpretation",
+      "passage": "With all holes open, both load-seeking rules finish balanced in every run, from both uniform and concentrated starts. Random movement visits coverage and balance in every run too, but its final mean squared load is 22.33, compared with 16.00 for greedy. The paired excess is 6.33, with interval [4.83, 7.84], from either start. Reaching a state once is weak evidence that a process maintains it. Staying put retains mean squared loads of 23.13 from uniform starts and 100.00 from concentrated starts.",
+      "rationale": "Both healthy greedy/arrival and both starts: balanced mean1 n30. Random first coverage/balance hits30/30 but only1 final balanced in each start, with finalQ22.3333."
+    },
+    {
+      "id": "closed-placement-scope",
+      "kind": "interpretation",
+      "passage": "Static closure exposes a more consequential mistake. With five holes closed and a three-hole sample, the mean final unplaced count is 5.03. Both accepting holes are occupied in every run, yet no run places all items. The mean overload is only 2.97, below the fully placed seven-hole minimum. The apparent improvement is missing work.",
+      "rationale": "closed/5: finaloccupied_accepting min=max2, unplaced minimum>0 and zero coverage hits, so U-related lowerO is not an improvement."
+    },
+    {
+      "id": "closed-trap",
+      "kind": "interpretation",
+      "passage": "Once the two accepting holes are occupied, every three-hole sample includes an empty closed hole. That hole reports zero; every accepting hole reports a positive load. The greedy rule therefore selects a refusal. This is an absorbing trap for its placement dynamics, not a statement that the remaining holes lack capacity. Each could hold all the items. The argument applies whenever all accepting holes are occupied and their number is smaller than the sample count.",
+      "rationale": "With k<r every size-r sample includes an empty closed0 hole. All accepting loads>=1; greedy picks aclosed destination and has no retry. All35 three-hole subsets verified for2 occupied accepting holes."
+    },
+    {
+      "id": "admission-figure",
+      "kind": "interpretation",
+      "passage": "![Admission and coverage at the end of the five-closure runs. Bars show means over thirty paired tapes. Three- and seven-hole samples leave 5.03 items unplaced; one-hole sampling and within-activation retry leave none. All four conditions occupy both accepting holes. Retry uses a three-hole sample.](../simulation/output/september-audit/admission.png){width=100%}",
+      "rationale": "Four displayed bars come from finalU and accepting occupancy; r3/r7 means5.0333 and otherU0, all occupancy2. No intervals shown; caption says means."
+    },
+    {
+      "id": "retry-pairing",
+      "kind": "interpretation",
+      "passage": "Inspecting all seven holes yields the same final unplaced count as inspecting three, on every tape. Inspecting only one allows placement to finish in every run, because an accepting destination can then be sampled without a closed competitor. Within-activation retry also places every item. Its paired reduction in unplaced count is 5.03, with interval [4.45, 5.62]. The retry control spends a mean of 1083.53 admission attempts against 500.00 without retry, so the additional progress has an explicit cost.",
+      "rationale": "r7 andr3 identical finalU on30tapes, not universal equivalence; r1 and same-view retry U0 and coverage_hits30. Extra attempts explicitly counted."
+    },
+    {
+      "id": "load-encoding",
+      "kind": "definition",
+      "passage": "The original noise operator is \\texttt{max(0, int(load + noise))}. It truncates toward zero and clips negative results; it does not round to the nearest integer. A load of $2-10^{-6}$ becomes $1$, while $2+10^{-6}$ remains $2$. An arbitrarily small negative error can therefore lower a positive integer report by a whole unit.",
+      "rationale": "Legacy perturbations and audit.encode use int then max0. +/-1e-6 example checked; np.rint nearest/ties-even differs. TinyGaussian has unbounded support, no universal rounding guarantee claimed."
+    },
+    {
+      "id": "tiny-rounding",
+      "kind": "interpretation",
+      "passage": "We compare this encoding with nearest-integer rounding followed by clipping, and with signed unquantized reports. The current occupied load remains exact in every variant. At noise standard deviation $10^{-6}$, the greedy rule's final mean $Q$ rises from 16.00 to 17.60 with truncation. The paired increase is 1.60 [0.81, 2.39], with Holm-adjusted $p=0.0023$. Nearest-integer rounding reproduces the noiseless result at this scale.",
+      "rationale": "At sigma1e-6 all rounded reports in the observed tapes reproduce no-noise rule outputs. No finite Gaussian scale gives a mathematical all-draw guarantee."
+    },
+    {
+      "id": "unquantized-boundary",
+      "kind": "interpretation",
+      "passage": "Truncation is only part of the explanation. Unquantized tiny noise gives mean $Q=17.47$, an increase of 1.47 [0.73, 2.20], also with adjusted $p=0.0023$. Two truly equal loads lie on the greedy rule's decision boundary: a slightly underestimated destination becomes eligible, even though the arriving item makes it more crowded. Removing integer conversion leaves that comparison intact.",
+      "rationale": "When true a=b a negative error makes reported b<a, permitting DeltaQ=2. This is independent of int conversion and is regression tested."
+    },
+    {
+      "id": "noise-figure",
+      "kind": "interpretation",
+      "passage": "![Mean final squared load under three report encodings and two comparison rules. All conditions use thirty paired tapes. The horizontal axis spaces the three tested noise scales categorically; connecting lines do not estimate an intervening response curve. The reference line is the balanced value, 16.](../simulation/output/september-audit/noise.png){width=100%}",
+      "rationale": "Plots30-tape meanQ at sigma0,1e-6,.5; categorical spacing and no interpolation/dose-response inference. Zero-noise is the shared healthy control."
+    },
+    {
+      "id": "arrival-noise-movement",
+      "kind": "interpretation",
+      "passage": "The arrival-aware rule finishes at $Q=16$ in every tiny-noise condition. This is an endpoint result, not a claim that noisy trajectories are unchanged. With tiny truncated noise, its last move occurs at a mean of 498.33 activations, versus 5.67 without noise. A small underestimate can admit a truly neutral move under the stricter comparison. It need not admit a harmful one.",
+      "rationale": "All three tiny-noise arrival conditions have finalQmin=max16. With a=b+1 a small underestimate can pass b_hat+1<a for an actually neutral move; movement is not endpoint failure."
+    },
+    {
+      "id": "half-noise-scope",
+      "kind": "assumption",
+      "passage": "At standard deviation 0.5, greedy truncation exceeds rounding by 0.80 in mean $Q$, with interval [0.13, 1.47]. The adjusted $p$ is 0.103, so this contrast does not clear the familywise threshold of 0.05. These scales do not establish a general noise-tolerance curve. They isolate a conversion discontinuity and a decision boundary that the earlier description of “discrete fidelity” obscured.",
+      "rationale": "Declared sigma.5 comparison has nominal interval excluding0 but Holmp=.1029135>.05 over12family. A few chosen scales cannot establish a general tolerance law."
+    },
+    {
+      "id": "table-caption",
+      "kind": "definition",
+      "passage": "Table 1. Means at the final activation, with one accepting hole reporting zero in the misleading conditions. Each row compares thirty paired tapes.",
+      "rationale": "Each table row compares same-tape healthy versus one misleading accepting hole at finalactivation500;30tapes per condition."
+    },
+    {
+      "id": "misleading-coverage",
+      "kind": "interpretation",
+      "passage": "For greedy, the overload increase is 0.60 [0.31, 0.89]. Arrival-aware preserves full coverage in every run, but its squared-load increase is 1.00 [0.39, 1.61], with adjusted $p=0.0139$. A coverage-only assessment would miss this concentration cost. Neither rule verifies the reported occupancy, and the arrival-aware correction is insufficient against a persistent false report.",
+      "rationale": "Arrival misleading retains coverage in all30runs but Qmean17 vs16. Ownload exact and adding1 do not verify misleading report."
+    },
+    {
+      "id": "entry-only-closure",
+      "kind": "definition",
+      "passage": "For the dynamic comparison, one hole closes after activation 100 and reopens after activation 300. Blocking entry alone keeps its occupants. In these runs the assignment remains fully placed and the overload stays at 3 throughout. There are rejected attempts during closure, but no lost coverage to recover. Describing the unchanged endpoint as rapid recovery would credit the system with replacing occupancy that was never removed.",
+      "rationale": "Audit event code closeshole0 afteractivation100, reopens after300, keeps occupants forclose. Trajectories verify U0/O3 acrossallsteps/alltapes inclose; no lost coverage recovery."
+    },
+    {
+      "id": "eviction-latencies",
+      "kind": "interpretation",
+      "passage": "Eviction changes the experiment. At closure, the affected items become unplaced. Their mean count is 1.50, while overload falls from 3.00 to 2.50. Once again, a lower overload accompanies a worse placement state. Every run subsequently replaces its evicted items before reopening, with a mean latency of 21.57 activations. Immediately before reopening, all items occupy the six accepting holes and overload is 4. Reopening does not move anyone by itself; full seven-hole coverage returns after a further mean of 2.73 activations.",
+      "rationale": "evict sets hole0 assignments -1 after100; all30latencies uncensored, U replaced duringclosure, six occupied before300, reopening changesstatusonly, subsequent coverage aftermean2.7333."
+    },
+    {
+      "id": "history-limits",
+      "kind": "interpretation",
+      "passage": "The distinction also limits claims about learning from damage. Items have no persistent internal memory, but the collective assignment is state and can carry the effects of earlier events. To show a lasting benefit from prior damage would require a matched later challenge and a specified benefit. The present experiment provides neither. Likewise, a trajectory that temporarily worsens a score does not demonstrate that the detour was necessary or that an item deferred a reward.",
+      "rationale": "No item memory does not imply no collective state/history. No matched later challenge or necessary-detour counterfactual, so no stress-inoculation or reward-deferral result."
+    },
+    {
+      "id": "scope-limits",
+      "kind": "interpretation",
+      "passage": "These conclusions concern one small allocation model. There are no service times, finite per-hole capacities, geometric neighborhoods, strategic reporters or evolving policies. A larger empirical study would be needed to assess how the effects change across those choices. The exact overload identity, move-cost calculation and closed-hole trap have wider algebraic scope, but the reported effect sizes and completion times do not.",
+      "rationale": "Only declared10/7models run; no capacities/service/geometry/strategic adaptation studied. Algebraic results have their stated domain; effect-size extrapolation withheld."
+    },
+    {
+      "id": "closing-inference",
+      "kind": "interpretation",
+      "passage": "The practical lesson is specific. A load report answers how crowded a destination appears; it need not say whether entry is possible or what the load will be after arrival. Perturbation becomes informative when those questions are separated and the resulting failures are counted. Here the system's apparent competence depends on which of them the evaluator remembers to ask.",
+      "rationale": "Load report, admission availability and post-arrival load are different defined quantities. Claimed lesson limited to observed mechanisms and measurement choices."
+    },
+    {
+      "id": "reproduction",
+      "kind": "definition",
+      "passage": "The repository contains the new protocol, paired-tape runner, raw per-run results, figures and a hash-bound execution record. The recorded run passed 26 regression tests and the mathematical checks. Python 3.12.4, NumPy 2.0.2, SciPy 1.14.1 and Matplotlib 3.9.2 were used; no external dataset is required. From \\texttt{simulation/}, run \\texttt{uv run --script audit.py --output output/my-audit}. The runner refuses to overwrite an existing result file or write into the legacy results directory. The old eight experiments remain available as historical material and are not the evidence for the revised numerical claims.",
+      "rationale": "Execution receipt reportsPASS, tests have26discovered methods and passed; actualruntime Python3.12.4 NumPy2.0.2 SciPy1.14.1 Matplotlib3.9.2 recorded. Runner explicitly refuses existing result and legacy directory; noexternaldata."
+    },
+    {
+      "id": "stay-uniform",
+      "kind": "computation",
+      "passage": "With all holes open, both load-seeking rules finish balanced in every run, from both uniform and concentrated starts. Random movement visits coverage and balance in every run too, but its final mean squared load is 22.33, compared with 16.00 for greedy. The paired excess is 6.33, with interval [4.83, 7.84], from either start. Reaching a state once is weak evidence that a process maintains it. Staying put retains mean squared loads of 23.13 from uniform starts and 100.00 from concentrated starts.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/uniform~1stay/final/squared_load/mean",
+        "reported": "23.13",
+        "scale": 1,
+        "decimals": 2,
+        "units": "squared load",
+        "conditions": "Thirty seed tapes6000–6029; stay-put null retains its initial assignment through500activations; uniform or all-in-one-hole start."
+      }
+    },
+    {
+      "id": "stay-pile",
+      "kind": "computation",
+      "passage": "With all holes open, both load-seeking rules finish balanced in every run, from both uniform and concentrated starts. Random movement visits coverage and balance in every run too, but its final mean squared load is 22.33, compared with 16.00 for greedy. The paired excess is 6.33, with interval [4.83, 7.84], from either start. Reaching a state once is weak evidence that a process maintains it. Staying put retains mean squared loads of 23.13 from uniform starts and 100.00 from concentrated starts.",
+      "evidence": {
+        "file": "simulation/output/september-audit/results.json",
+        "run_id": "september-audit",
+        "pointer": "/summary/conditions/pile~1stay/final/squared_load/mean",
+        "reported": "100.00",
+        "scale": 1,
+        "decimals": 2,
+        "units": "squared load",
+        "conditions": "Thirty seed tapes6000–6029; stay-put null retains its initial assignment through500activations; uniform or all-in-one-hole start."
+      }
+    }
+  ],
+  "runs": [
+    {
+      "id": "september-audit",
+      "record": "verification/september-audit.json",
+      "required": true
+    }
+  ]
+}

@@ -1,14 +1,17 @@
 slug: on-faultization-pigeonhole
 web_slug: on-faultization-pigeonhole
-title: "On Faultization: Pigeonhole Principle. What Perturbation Reveals About Pattern Access Under Irreducible Constraint"
-header: "On Faultization: Pigeonhole Principle"
-created: "2026-03"        # inception month (drives YYYY/MM archive path)
-date: "March 2026"            # publication month (shown on web)
+title: "On Faultization: Coverage and Failure in a Pigeonhole Model"
+header: "On Faultization: Pigeonhole"
+created: "2026-03"
+date: "March 2026"
 paper_dir: paper
 has_simulation: true
-claims_target: claim-ledger      # results.json | claim-ledger | none
+claims_target: claim-ledger
 repo: git@github.com:piatra-institute/papers-on-faultization-pigeonhole.git
 github: https://github.com/piatra-institute/papers-on-faultization-pigeonhole
-status: published              # draft | built | published
+status: published # Existing deployment; September revision has not been deployed.
+build_resources:
+  - simulation/output/september-audit/admission.png
+  - simulation/output/september-audit/noise.png
 abstract: |-
-  We apply faultization (a systematic regime of morphogenetic perturbation) to the pigeonhole principle reinterpreted as a distributed multi-agent system, asking which patterns from the latent space (Levin, 2026) the system accesses under irreducible constraint. The theoretical minimum overload O_min = m − n is a mathematical truth the system reaches without computing it. Because overload equals m minus the number of occupied holes when all pigeons are placed, reaching O_min is complete coverage of the usable holes rather than optimal load balancing, and in six of eight experiments every run reaches it with zero variance. Perceptual noise produces immediate degradation with no detectable tolerance down to the smallest noise tested; misleading holes invert the pattern-seeking mechanism, the study's strongest result; and all four local policies reach identical endpoints despite 5-fold differences in process cost. We read the free-lunch framing as Levin's philosophical sense, distinct from the No-Free-Lunch theorem, and separate the empirical results from that interpretation.
+  An empty resource can look like the best destination precisely because it accepts nothing. We study this failure in a small allocation model: ten items move among seven holes using sampled load reports. The pigeonhole bound constrains fully placed assignments, but the usual overload measure records coverage, not balance, and can improve when items become unplaced. A new audit separates these outcomes, pairs random inputs across conditions, and compares load-seeking rules with random movement, staying put, and an arrival-aware alternative. Across thirty seed tapes, closing five holes leaves a mean of 5.03 items unplaced under the original comparison rule. Sampling every hole does not help; trying another candidate after rejection places every item. Tiny Gaussian errors also depend on the implementation. Truncating noisy loads and leaving them unquantized both worsen allocation, whereas nearest-integer rounding preserves the noiseless result at the smallest tested scale. Accounting for the arriving item prevents that endpoint loss, although movement continues. Finally, blocking entry preserves existing occupancy; eviction creates a different recovery problem. These results identify failures in admission information and local cost comparisons. They support a method for inspecting a perturbation model, with no additional inference about cognition or access to mathematical patterns.

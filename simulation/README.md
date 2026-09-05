@@ -1,62 +1,51 @@
-# On Faultization: Pigeonhole Principle (simulation)
+# Pigeonhole simulation
 
-Morphogenetic perturbation experiments on the pigeonhole principle reinterpreted as a distributed multi-agent placement system (numpy backend). This is the paper's `simulation/` directory; run all commands from here.
+## Current audit
 
-## Running commands
+Read [AUDIT_PROTOCOL.md](AUDIT_PROTOCOL.md) before interpreting the September
+results. The new `audit.py` reuses the core placement state but runs a separate
+paired-input design. It is not an exact replication of the eight old experiments.
 
-Always use `uv run --script` to execute scripts (picks up inline dependencies), from this `simulation/` directory:
+From this directory:
 
-```
-uv run --script run.py <command> [--num-reps N] [--num-steps N] [--result-suffix SUFFIX]
-```
-
-## Key commands
-
-```
-uv run --script run.py test              # Quick smoke test
-uv run --script run.py experiment1       # Single experiment (1-8)
-uv run --script run.py all               # All 8 experiments
-uv run --script run.py experiment3       # Noisy perception
+```sh
+python3 -m unittest test_audit -v
+uv run --script audit.py --output output/my-audit
 ```
 
-Statistical analysis:
+Python >=3.12; pinned NumPy 2.0.2, SciPy 1.14.1, Matplotlib 3.9.2. The recorded
+run used Python 3.12.4. With these dependencies installed, invoke Python directly.
+No dataset download is needed. Matplotlib may need a writable MPLCONFIGDIR.
 
-```
-uv run --script analyze_stats.py all     # All experiments
-uv run --script analyze_stats.py exp1    # Single experiment
-uv run --script analyze_stats.py summary # Cross-experiment summary
-```
+The audit runs 26 regressions, mathematical checks, then 32 conditions over
+30 independent seed tapes and 500 activations. It records U, coverage, squared
+load, conditional balance regret, report queries, admission attempts, successful
+moves and censored hitting times. Independent streams pair initialization,
+activation, candidate ordering and noise across conditions. Execution success
+is separate from whether any scientific contrast rejects its null.
 
-Visualization:
+Canonical evidence: `output/september-audit/results.json`, `admission.png` and
+`noise.png`; receipt: `../verification/september-audit.json`. Only these selected
+scientific outputs are Git-eligible. Other output paths, caches, build records
+and PDFs remain ignored. The runner refuses an existing results.json and writes
+nothing into legacy `results/`.
 
-```
-uv run --script visualize.py             # Generate all plots
-```
+The main rules use the same reported-load interface. The arrival-aware rule adds
+one before comparing with the exact current occupied load. Both exclude the
+current hole as a relocation destination. Retry uses the next eligible candidate
+within one activation, without persistent memory, and can spend more attempts.
+Closed admission preserves incumbents unless an explicit eviction is requested.
 
-## Project structure
+## Legacy study
 
-- `model.py` — core pigeonhole system (numpy backend)
-- `perturbations.py` — hook-based perturbations (freeze, noise, misleading, etc.)
-- `experiments.py` — 8 experiment functions
-- `metrics.py` — statistical metrics (DG index, robustness curves, etc.)
-- `run.py` — CLI dispatcher
-- `analyze_stats.py` — paired t-tests and summary tables
-- `visualize.py` — matplotlib plotting functions
-- `results/` — JSON result files (committed) plus PNG plots (gitignored)
-- `EXPERIMENTS.md`, `FINDINGS.md` — detailed experiment and findings write-ups
-- `../paper/PAPER.md` — the manuscript; `../CLAIM_LEDGER.md` — the numeric-claim ledger
+`model.py`, `perturbations.py`, `experiments.py`, `metrics.py`, `run.py`,
+`analyze_stats.py` and `visualize.py` retain their original behavior. The eight
+JSON files in `results/` are historical evidence for the old draft. The old
+FINDINGS, EXPERIMENTS, root CLAIM_LEDGER and referee report are labeled historical.
+Do not run `run.py all` merely to reproduce the new manuscript: that command
+writes the old result files instead.
 
-## Model
-
-`m = 10` pigeons, `n = 7` holes. Overload `O = Σ max(0, ℓ_i − 1)`. When all pigeons are placed, `O = m − H` for `H` occupied holes, so `O_min = m − n = 3` is reached exactly when every hole is occupied (complete coverage of the usable holes, not optimal load balancing). Four local policies (GREEDY, EXPLORATORY, REPULSIVE, COOPERATIVE); a composite potential `Φ` additionally penalizes concentration and unplaced pigeons. Frozen holes silently reject new placements and do not eject their current occupant; misleading holes accept placement but report load 0.
-
-## Experiments
-
-1. Frozen hole robustness curve — coverage under substrate loss (pattern bandwidth)
-2. Policy comparison (GREEDY, EXPLORATORY, REPULSIVE, COOPERATIVE) — identical endpoints, divergent process cost
-3. Noisy perception (Gaussian noise on reported loads) — pattern fidelity in a discrete interface
-4. View radius sweep (pigeon visibility range) — information geometry; visibility buys speed, not reachability
-5. Chimeric policies (mixed-policy populations) — aggregation tested against the correct 0.75 baseline
-6. Recovery after damage (freeze then heal) — process cost of fault duration (dynamic freeze keeps incumbents, so overload is unchanged)
-7. Progressive vs sudden damage — schedule affects failed attempts, not the overload endpoint
-8. Misleading holes (deceptive substrate) — pattern corruption and deceptive-feedback capture
+Known legacy semantics: overload stabilization is not assignment convergence;
+noisy reports truncate rather than round; exploratory extra probes and the
+cooperative potential use true information; shared seeds do not ensure shared
+random tapes. Those differences motivated the new audit.

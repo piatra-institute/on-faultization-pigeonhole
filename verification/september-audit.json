@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "september-audit",
+  "started": "2026-09-05T08:21:39.128344+00:00",
+  "finished": "2026-09-05T08:22:00.823926+00:00",
+  "command": [
+    "python3",
+    "audit.py"
+  ],
+  "cwd": "simulation",
+  "runtime": {
+    "scope": "recorder",
+    "python": "3.12.4 (v3.12.4:8e8a4baf65, Jun  6 2024, 17:33:18) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-15.1-arm64-arm-64bit"
+  },
+  "execution_result": "simulation/output/september-audit/results.json",
+  "execution": {
+    "status": "PASS",
+    "exit_code": 0,
+    "detail": "suite reports PASS"
+  },
+  "input_scope": "execution-v1",
+  "additional_inputs": [
+    "simulation/AUDIT_PROTOCOL.md"
+  ],
+  "inputs": {
+    "simulation/AUDIT_PROTOCOL.md": "71f2cf187075adfc398445cbd1c34ce92234b99762f2a35218d789ec9af734cd",
+    "simulation/analyze_stats.py": "2be2325c86bfebece9717e057f5c87944a43550d329a1dc320c05d520516ab7b",
+    "simulation/audit.py": "e91ecbe153e614e5b01c6c422cb0fa65f5cc326a71063fc0ef576d90493b4d56",
+    "simulation/build.py": "3a78cf9d96dcb6457b6fcbb84feb0e27fe3e106e83f723cf86703bcc05303cd0",
+    "simulation/experiments.py": "24e964198a1d4522914cd856bfe835df1257cae1e0ea3bf208680f12d45e3c88",
+    "simulation/metrics.py": "d45c902255f9204e0f1ba4e8a81d3c9aa267bb18f2d0bebecc4c734ac59116dd",
+    "simulation/model.py": "4780d653ede2e6337c846c4f0cd099bdecf22f5fe5768947c79d296cea7f7966",
+    "simulation/perturbations.py": "dbfe4c7c00092430ffb45a1269f5ab529291d7394c9ed15416d21c7fee07adc9",
+    "simulation/run.py": "65a2fa546c61d0760491b77ce5121e45c531370d46e50555be5ec5e4fc8a26d6",
+    "simulation/scripts/build-paper.sh": "fd33832532fd1fda112752a7a8db95d48da5819e8d2917df5ddf2b9dea9cee51",
+    "simulation/test_audit.py": "0cd6183ec4ad5b945ca842531ad534425369b0fc2203269e830e2e0545095ca0",
+    "simulation/visualize.py": "e2479d0c08d30a896bd1278df023051aa349eb6b08a4b2bc2191c385226c04d2"
+  },
+  "artifacts": {
+    "simulation/output/september-audit/results.json": "dd0579b7a2270f3f25e547c6492cdf69767979fc147531b5883689f24defcd1e",
+    "simulation/output/september-audit/admission.png": "82f882497ca28425c2bedac1a4fa4da27c4478b6d3208a4048af8db336c1b808",
+    "simulation/output/september-audit/noise.png": "ec1c845641cb07e2d6aab500e5f069df2ca0748425fcddea0ff70b34a335385a"
+  }
+}

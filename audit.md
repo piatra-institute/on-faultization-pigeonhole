@@ -1,3 +1,41 @@
+## 2026-09-05 — measurement-led revision and separate audit
+
+The complete original manuscript and core implementation were read before
+rewriting. The new title is “On Faultization: Coverage and Failure in a
+Pigeonhole Model.” A 198-word abstract and six argument-led sections replace
+the repeated Platonic taxonomy. The central distinctions are full placement,
+coverage, load balance, admission availability and the cost after arrival.
+
+A separate audit uses 30 paired seed tapes, 32 conditions and 500 activations.
+It passed 26 tests and exact mathematical checks; the recorded execution ran
+08:21:39–08:22:00 UTC. Twelve specified paired contrasts use one Holm family,
+with pointwise intervals. New output does not overwrite the eight historical
+result JSON files or change the core model's legacy defaults.
+
+Five closures leave mean U=5.0333 under the original comparison; larger samples
+retain the trap, while one-candidate sampling and retry place all items. The
+retry's extra admission attempts are counted. Tiny-noise truncation and an
+unquantized strict decision boundary each affect Q; arrival-aware comparison
+protects the tiny-noise endpoint without guaranteeing no movement. Misleading
+reports can preserve coverage while increasing concentration. Entry-only
+closure retains occupancy; eviction produces missing work and later replacement.
+The revised interpretation does not infer cognition, a necessary detour, acquired
+stress tolerance or an independently tested pattern ontology.
+
+Five primary-source entries, 121 selected bound claim records and updated
+supporting documentation accompany the manuscript. The original ledger,
+experiment/findings reports and June referee report are explicitly historical.
+The title uses the requested colon/newline treatment. All nine final pages were
+rendered at 110 dpi, individually inspected and reread. A paragraph guard fixes
+a floating-figure interruption; references start together on their own page.
+Manuscript SHA-256: 49933f4005bbd6065950f0cf75ea0f08087bbd705bf462b550164168da7ce33b.
+PDF SHA-256: 3d9828de2baeeabdc21a60e67120b9949091808212b68353641077ca65803c5f.
+
+Only the canonical scientific JSON and two figures are newly Git-eligible;
+build logs, manifests, scratch output and the paper's already-ignored PDF stay
+local. Local completion is separate from the authorized commit/push step and
+from any live-site deployment, which has not been requested.
+
 # Audit
 
 Dated log of editorial passes and verification runs. Newest first.

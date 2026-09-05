@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "date": "2026-09-05",
+  "pdf_sha256": "3d9828de2baeeabdc21a60e67120b9949091808212b68353641077ca65803c5f",
+  "page_count": 9,
+  "pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "all_pages_inspected": true,
+  "notes": "Rendered latest9pages at110dpi and individually inspected all. Title/subtitle forced break, institution/date separated. Equations/counts readable; both figures and legends fully visible; table complete. Local paragraph guard prevents noise figure interrupting the .5-noise paragraph; references start together onpage9. No clipping, overlap, missing glyphs or broken citations. Final pages reread."
+}

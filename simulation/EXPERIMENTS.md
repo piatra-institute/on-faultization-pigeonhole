@@ -1,3 +1,9 @@
+> Historical report for the pre-September draft. It is preserved for provenance,
+> not maintained as evidence for the revised manuscript. Use `claims.yaml` at
+> the repository root, the September protocol and its new execution record.
+> The old interpretation of convergence, noise, capacity and pattern access
+> must not be treated as a current finding.
+
 # Experiments Summary
 
 Each experiment probes the interface between local policies and the pigeonhole pattern -- a mathematical truth (O_min = m-n) that the system channels from the latent space (Levin, 2026).
